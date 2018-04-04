@@ -11,5 +11,10 @@
 @interface ViewController : UIViewController
 
 
+/**
+ test test test
+ */
+-(void)justTest;
+
 @end
 

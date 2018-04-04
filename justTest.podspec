@@ -2,11 +2,8 @@
 Pod::Spec.new do |s|
 
   s.name         = "justTest"
-  s.version      = "0.0.1"
+  s.version      = "0.1.0"
   s.summary      = "justTest pod"
-
-  s.description  = <<-DESC
-                   DESC
 
   s.homepage     = "http://github.com/chenfangfang/justTest"
 
@@ -19,5 +16,6 @@ Pod::Spec.new do |s|
 
 
   s.source_files  = "justTest", "justTest/**/*.{h,m}"
-
+  
+  s.documentation_url = 'http://www.example.com/docs.html'
 end
