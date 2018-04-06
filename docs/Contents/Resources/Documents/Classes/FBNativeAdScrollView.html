@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>FBNativeAdScrollView Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">philm </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">yoyo</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/adPersistenceEnabled">adPersistenceEnabled</option>
+		
+		<option value="//api/name/animationEnabled">animationEnabled</option>
+		
+		<option value="//api/name/delegate">delegate</option>
+		
+		<option value="//api/name/maximumNativeAdCount">maximumNativeAdCount</option>
+		
+		<option value="//api/name/viewController">viewController</option>
+		
+		<option value="//api/name/xInset">xInset</option>
+		
+	</optgroup>
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/initWithNativeAdsManager:withType:">- initWithNativeAdsManager:withType:</option>
+		
+		<option value="//api/name/initWithNativeAdsManager:withType:withAttributes:">- initWithNativeAdsManager:withType:withAttributes:</option>
+		
+		<option value="//api/name/initWithNativeAdsManager:withType:withAttributes:withMaximum:">- initWithNativeAdsManager:withType:withAttributes:withMaximum:</option>
+		
+		<option value="//api/name/initWithNativeAdsManager:withViewProvider:">- initWithNativeAdsManager:withViewProvider:</option>
+		
+		<option value="//api/name/initWithNativeAdsManager:withViewProvider:withMaximum:">- initWithNativeAdsManager:withViewProvider:withMaximum:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">FBNativeAdScrollView Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>UIView</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>FBNativeAdScrollView.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>@class FBNativeAdScrollView</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/maximumNativeAdCount" title="maximumNativeAdCount"></a>
+	<h3 class="method-title"><code><a href="#//api/name/maximumNativeAdCount">&nbsp;&nbsp;maximumNativeAdCount</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Maximum native ads that this scroll view will load. Defaults to 10. If changed after calling loadAds, all current ads will be discarded and loadAds must be called again.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign, readonly) NSUInteger maximumNativeAdCount</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>@property</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">FBNativeAdScrollView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/animationEnabled" title="animationEnabled"></a>
+	<h3 class="method-title"><code><a href="#//api/name/animationEnabled">&nbsp;&nbsp;animationEnabled</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Toggles animating the loaded views. Default is YES.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign, getter=isAnimationEnabled) BOOL animationEnabled</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>@property</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">FBNativeAdScrollView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/xInset" title="xInset"></a>
+	<h3 class="method-title"><code><a href="#//api/name/xInset">&nbsp;&nbsp;xInset</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Horizontal inset for views in the scroll view. Defaults to 8 points.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) CGFloat xInset</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>@property</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">FBNativeAdScrollView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/adPersistenceEnabled" title="adPersistenceEnabled"></a>
+	<h3 class="method-title"><code><a href="#//api/name/adPersistenceEnabled">&nbsp;&nbsp;adPersistenceEnabled</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Reloads the same ads for the same manager. Default is NO.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign, getter=isAdPersistenceEnabled) BOOL adPersistenceEnabled</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>@property</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">FBNativeAdScrollView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/viewController" title="viewController"></a>
+	<h3 class="method-title"><code><a href="#//api/name/viewController">&nbsp;&nbsp;viewController</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>A view controller that is used to present modal content. If nil, the view searches for a view controller.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, weak, nullable) UIViewController *viewController</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>@property</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">FBNativeAdScrollView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/delegate" title="delegate"></a>
+	<h3 class="method-title"><code><a href="#//api/name/delegate">&nbsp;&nbsp;delegate</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Passes delegate methods from <a href="../Classes/FBNativeAd.html">FBNativeAd</a>. Separate delegate calls will be made for each native ad contained.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, weak, nullable) id&lt;FBNativeAdDelegate&gt; delegate</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>@property</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">FBNativeAdScrollView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/initWithNativeAdsManager:withType:" title="initWithNativeAdsManager:withType:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initWithNativeAdsManager:withType:">&ndash;&nbsp;initWithNativeAdsManager:withType:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Creates a native ad horizontal scroll view for a given native ads manager and native ad template. The manager can be preloaded with ads, and loadAds will use the preloaded ads from the manager. Otherwise, the scroll view uses the manager to load ads normally.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (nonnull instancetype)initWithNativeAdsManager:(nonnull FBNativeAdsManager *)<em>manager</em> withType:(FBNativeAdViewType)<em>type</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>manager</code></th>
+						<td><p>An instance of FBNativeAdManager. Can be preloaded with ads.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>type</code></th>
+						<td><p>The type of this native ad template. For more information, consult <a href="../Constants/FBNativeAdViewType.html">FBNativeAdViewType</a>.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>@method</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">FBNativeAdScrollView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/initWithNativeAdsManager:withType:withAttributes:" title="initWithNativeAdsManager:withType:withAttributes:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initWithNativeAdsManager:withType:withAttributes:">&ndash;&nbsp;initWithNativeAdsManager:withType:withAttributes:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Creates a native ad horizontal scroll view for a given native ads manager and native ad template. The manager can be preloaded with ads, and loadAds will use the preloaded ads from the manager. Otherwise, the scroll view uses the manager to load ads normally.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (nonnull instancetype)initWithNativeAdsManager:(nonnull FBNativeAdsManager *)<em>manager</em> withType:(FBNativeAdViewType)<em>type</em> withAttributes:(nonnull FBNativeAdViewAttributes *)<em>attributes</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>manager</code></th>
+						<td><p>An instance of FBNativeAdManager. Can be preloaded with ads.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>type</code></th>
+						<td><p>The type of this native ad template. For more information, consult <a href="../Constants/FBNativeAdViewType.html">FBNativeAdViewType</a>.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>attributes</code></th>
+						<td><p>The layout of this native ad template. For more information, consult FBNativeAdViewLayout.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>@method</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">FBNativeAdScrollView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/initWithNativeAdsManager:withType:withAttributes:withMaximum:" title="initWithNativeAdsManager:withType:withAttributes:withMaximum:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initWithNativeAdsManager:withType:withAttributes:withMaximum:">&ndash;&nbsp;initWithNativeAdsManager:withType:withAttributes:withMaximum:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Creates a native ad horizontal scroll view for a given native ads manager and native ad template. The manager can be preloaded with ads, and loadAds will use the preloaded ads from the manager. Otherwise, the scroll view uses the manager to load ads normally.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (nonnull instancetype)initWithNativeAdsManager:(nonnull FBNativeAdsManager *)<em>manager</em> withType:(FBNativeAdViewType)<em>type</em> withAttributes:(nonnull FBNativeAdViewAttributes *)<em>attributes</em> withMaximum:(NSUInteger)<em>maximumNativeAdCount</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>manager</code></th>
+						<td><p>An instance of FBNativeAdManager. Can be preloaded with ads.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>type</code></th>
+						<td><p>The type of this native ad template. For more information, consult <a href="../Constants/FBNativeAdViewType.html">FBNativeAdViewType</a>.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>attributes</code></th>
+						<td><p>The layout of this native ad template. For more information, consult FBNativeAdViewLayout.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>maximumNativeAdCount</code></th>
+						<td><p>Maximum native ads to show at once.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>@method</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">FBNativeAdScrollView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/initWithNativeAdsManager:withViewProvider:" title="initWithNativeAdsManager:withViewProvider:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initWithNativeAdsManager:withViewProvider:">&ndash;&nbsp;initWithNativeAdsManager:withViewProvider:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>This is a method to create a native ad horizontal scroll view from a user provided view.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (nonnull instancetype)initWithNativeAdsManager:(nonnull FBNativeAdsManager *)<em>manager</em> withViewProvider:(nonnull UIView *__nonnull ( ^ ) ( FBNativeAd *__nonnull nativeAd , NSUInteger position ))<em>childViewProvider</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>manager</code></th>
+						<td><p>An instance of FBNativeAdManager. Can be preloaded with ads.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>childViewProvider</code></th>
+						<td><p>Block that creates new views for each loaded native ad. Must not reuse the same instance, but return a new view for each call. Views may be arbitrarily resized and should support resizing their content through Auto Layout constraints, autoresizing masks, or manual resizing.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>@method</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">FBNativeAdScrollView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/initWithNativeAdsManager:withViewProvider:withMaximum:" title="initWithNativeAdsManager:withViewProvider:withMaximum:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initWithNativeAdsManager:withViewProvider:withMaximum:">&ndash;&nbsp;initWithNativeAdsManager:withViewProvider:withMaximum:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>This is a method to create a native ad horizontal scroll view from a user provided view.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (nonnull instancetype)initWithNativeAdsManager:(nonnull FBNativeAdsManager *)<em>manager</em> withViewProvider:(nonnull UIView *__nonnull ( ^ ) ( FBNativeAd *__nonnull nativeAd , NSUInteger position ))<em>childViewProvider</em> withMaximum:(NSUInteger)<em>maximumNativeAdCount</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>manager</code></th>
+						<td><p>An instance of FBNativeAdManager. Can be preloaded with ads.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>childViewProvider</code></th>
+						<td><p>Block that creates new views for each loaded native ad. Must not reuse the same instance, but return a new view for each call. Views may be arbitrarily resized and should support resizing their content through Auto Layout constraints, autoresizing masks, or manual resizing.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>maximumNativeAdCount</code></th>
+						<td><p>Maximum native ads to show at once.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>@method</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">FBNativeAdScrollView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2018 yoyo. All rights reserved. Updated: 2018-04-03</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

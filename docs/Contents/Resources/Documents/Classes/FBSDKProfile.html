@@ -1,0 +1,959 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>FBSDKProfile Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">philm </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">yoyo</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/firstName">firstName</option>
+		
+		<option value="//api/name/lastName">lastName</option>
+		
+		<option value="//api/name/linkURL">linkURL</option>
+		
+		<option value="//api/name/middleName">middleName</option>
+		
+		<option value="//api/name/name">name</option>
+		
+		<option value="//api/name/refreshDate">refreshDate</option>
+		
+		<option value="//api/name/userID">userID</option>
+		
+	</optgroup>
+	
+
+	
+	<optgroup label="Class Methods">
+		
+		<option value="//api/name/currentProfile">+ currentProfile</option>
+		
+		<option value="//api/name/enableUpdatesOnAccessTokenChange:">+ enableUpdatesOnAccessTokenChange:</option>
+		
+		<option value="//api/name/loadCurrentProfileWithCompletion:">+ loadCurrentProfileWithCompletion:</option>
+		
+		<option value="//api/name/setCurrentProfile:">+ setCurrentProfile:</option>
+		
+	</optgroup>
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/imagePathForPictureMode:size:">- imagePathForPictureMode:size:</option>
+		
+		<option value="//api/name/imageURLForPictureMode:size:">- imageURLForPictureMode:size:</option>
+		
+		<option value="//api/name/initWithUserID:firstName:middleName:lastName:name:linkURL:refreshDate:">- initWithUserID:firstName:middleName:lastName:name:linkURL:refreshDate:</option>
+		
+		<option value="//api/name/isEqualToProfile:">- isEqualToProfile:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">FBSDKProfile Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Conforms to</th>
+	<td>NSCopying<br />NSSecureCoding</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>FBSDKProfile.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>This class provides a global &ldquo;currentProfile&rdquo; instance to more easily
+add social context to your application. When the profile changes, a notification is
+posted so that you can update relevant parts of your UI and is persisted to NSUserDefaults.</p>
+
+<p>Typically, you will want to call <code>enableUpdatesOnAccessTokenChange:YES</code> so that
+it automatically observes changes to the <a href="../Classes/FBSDKAccessToken.html#//api/name/currentAccessToken"><code>[FBSDKAccessToken currentAccessToken]</code></a>.</p>
+
+<p>You can use this class to build your own <a href="../Classes/FBSDKProfilePictureView.html"><code>FBSDKProfilePictureView</code></a> or in place of typical requests to &ldquo;/me&rdquo;.</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/initWithUserID:firstName:middleName:lastName:name:linkURL:refreshDate:" title="initWithUserID:firstName:middleName:lastName:name:linkURL:refreshDate:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initWithUserID:firstName:middleName:lastName:name:linkURL:refreshDate:">&ndash;&nbsp;initWithUserID:firstName:middleName:lastName:name:linkURL:refreshDate:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>initializes a new instance.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (instancetype)initWithUserID:(NSString *)<em>userID</em> firstName:(NSString *)<em>firstName</em> middleName:(NSString *)<em>middleName</em> lastName:(NSString *)<em>lastName</em> name:(NSString *)<em>name</em> linkURL:(NSURL *)<em>linkURL</em> refreshDate:(NSDate *)<em>refreshDate</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>userID</code></th>
+						<td><p>the user ID</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>firstName</code></th>
+						<td><p>the user&rsquo;s first <a href="#//api/name/name">name</a></p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>middleName</code></th>
+						<td><p>the user&rsquo;s middle <a href="#//api/name/name">name</a></p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>lastName</code></th>
+						<td><p>the user&rsquo;s last <a href="#//api/name/name">name</a></p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>name</code></th>
+						<td><p>the user&rsquo;s complete <a href="#//api/name/name">name</a></p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>linkURL</code></th>
+						<td><p>the link for this profile</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>refreshDate</code></th>
+						<td><p>the optional date this profile was fetched. Defaults to [NSDate date].</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">FBSDKProfile.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/userID" title="userID"></a>
+	<h3 class="method-title"><code><a href="#//api/name/userID">&nbsp;&nbsp;userID</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The user id</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSString *userID</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">FBSDKProfile.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/firstName" title="firstName"></a>
+	<h3 class="method-title"><code><a href="#//api/name/firstName">&nbsp;&nbsp;firstName</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The user&rsquo;s first <a href="#//api/name/name">name</a></p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSString *firstName</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">FBSDKProfile.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/middleName" title="middleName"></a>
+	<h3 class="method-title"><code><a href="#//api/name/middleName">&nbsp;&nbsp;middleName</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The user&rsquo;s middle <a href="#//api/name/name">name</a></p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSString *middleName</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">FBSDKProfile.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/lastName" title="lastName"></a>
+	<h3 class="method-title"><code><a href="#//api/name/lastName">&nbsp;&nbsp;lastName</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The user&rsquo;s last <a href="#//api/name/name">name</a></p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSString *lastName</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">FBSDKProfile.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/name" title="name"></a>
+	<h3 class="method-title"><code><a href="#//api/name/name">&nbsp;&nbsp;name</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The user&rsquo;s complete name</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSString *name</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">FBSDKProfile.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/linkURL" title="linkURL"></a>
+	<h3 class="method-title"><code><a href="#//api/name/linkURL">&nbsp;&nbsp;linkURL</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>A URL to the user&rsquo;s profile.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSURL *linkURL</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Consider using Bolts and <a href="../Classes/FBSDKAppLinkResolver.html"><code>FBSDKAppLinkResolver</code></a> to resolve this
+to an app link to link directly to the user&rsquo;s profile in the Facebook app.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">FBSDKProfile.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/refreshDate" title="refreshDate"></a>
+	<h3 class="method-title"><code><a href="#//api/name/refreshDate">&nbsp;&nbsp;refreshDate</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The last time the profile data was fetched.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSDate *refreshDate</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">FBSDKProfile.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/currentProfile" title="currentProfile"></a>
+	<h3 class="method-title"><code><a href="#//api/name/currentProfile">+&nbsp;currentProfile</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Gets the current FBSDKProfile instance.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (FBSDKProfile *)currentProfile</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">FBSDKProfile.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setCurrentProfile:" title="setCurrentProfile:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setCurrentProfile:">+&nbsp;setCurrentProfile:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Sets the current instance and posts the appropriate notification if the profile parameter is different
+than the receiver.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)setCurrentProfile:(FBSDKProfile *)<em>profile</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>profile</code></th>
+						<td><p>the profile to set</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This persists the profile to NSUserDefaults.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">FBSDKProfile.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/enableUpdatesOnAccessTokenChange:" title="enableUpdatesOnAccessTokenChange:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/enableUpdatesOnAccessTokenChange:">+&nbsp;enableUpdatesOnAccessTokenChange:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Indicates if <a href="#//api/name/currentProfile"><code>currentProfile</code></a> will automatically observe <code>FBSDKAccessTokenDidChangeNotification</code> notifications</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)enableUpdatesOnAccessTokenChange:(BOOL)<em>enable</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>enable</code></th>
+						<td><p>YES is observing</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>If observing, this class will issue a graph request for public profile data when the current token&rsquo;s <a href="#//api/name/userID">userID</a>
+differs from the current profile. You can observe <code>FBSDKProfileDidChangeNotification</code> for when the profile is updated.</p>
+
+<p>Note that if <a href="../Classes/FBSDKAccessToken.html#//api/name/currentAccessToken"><code>[FBSDKAccessToken currentAccessToken]</code></a> is unset, the <a href="#//api/name/currentProfile"><code>currentProfile</code></a> instance remains. It&rsquo;s also possible
+for <a href="#//api/name/currentProfile"><code>currentProfile</code></a> to return nil until the data is fetched.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">FBSDKProfile.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/loadCurrentProfileWithCompletion:" title="loadCurrentProfileWithCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/loadCurrentProfileWithCompletion:">+&nbsp;loadCurrentProfileWithCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Loads the current profile and passes it to the completion block.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)loadCurrentProfileWithCompletion:(void ( ^ ) ( FBSDKProfile *profile , NSError *error ))<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>The block to be executed once the profile is loaded</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>If the profile is already loaded, this method will call the completion block synchronously, otherwise it
+will begin a graph request to update <a href="#//api/name/currentProfile"><code>currentProfile</code></a> and then call the completion block when finished.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">FBSDKProfile.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/imageURLForPictureMode:size:" title="imageURLForPictureMode:size:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/imageURLForPictureMode:size:">&ndash;&nbsp;imageURLForPictureMode:size:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>A convenience method for returning a complete <code>NSURL</code> for retrieving the user&rsquo;s profile image.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSURL *)imageURLForPictureMode:(FBSDKProfilePictureMode)<em>mode</em> size:(CGSize)<em>size</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>mode</code></th>
+						<td><p>The picture mode</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>size</code></th>
+						<td><p>The height and width. This will be rounded to integer precision.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">FBSDKProfile.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/imagePathForPictureMode:size:" title="imagePathForPictureMode:size:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/imagePathForPictureMode:size:">&ndash;&nbsp;imagePathForPictureMode:size:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>A convenience method for returning a Graph API path for retrieving the user&rsquo;s profile image. (<b class="deprecated">Deprecated:</b><span class="deprecated"> use <code>imageURLForPictureMode:size:</code> instead</span>)</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSString *)imagePathForPictureMode:(FBSDKProfilePictureMode)<em>mode</em> size:(CGSize)<em>size</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>mode</code></th>
+						<td><p>The picture mode</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>size</code></th>
+						<td><p>The height and width. This will be rounded to integer precision.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>You can pass this to a <a href="../Classes/FBSDKGraphRequest.html"><code>FBSDKGraphRequest</code></a> instance to download the image.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">FBSDKProfile.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/isEqualToProfile:" title="isEqualToProfile:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isEqualToProfile:">&ndash;&nbsp;isEqualToProfile:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns YES if the profile is equivalent to the receiver.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)isEqualToProfile:(FBSDKProfile *)<em>profile</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>profile</code></th>
+						<td><p>the profile to compare to.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">FBSDKProfile.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2018 yoyo. All rights reserved. Updated: 2018-04-03</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

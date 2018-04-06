@@ -4,6 +4,9 @@ Pod::Spec.new do |s|
   s.name         = "justTest"
   s.version      = "0.1.0"
   s.summary      = "justTest pod"
+ 
+ s.description      = <<-DESC
+                       DESC
 
   s.homepage     = "http://github.com/chenfangfang/justTest"
 
