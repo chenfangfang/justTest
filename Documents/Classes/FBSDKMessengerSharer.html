@@ -1,0 +1,995 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>FBSDKMessengerSharer Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">philm </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">yoyo</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+
+	
+	<optgroup label="Class Methods">
+		
+		<option value="//api/name/messengerPlatformCapabilities">+ messengerPlatformCapabilities</option>
+		
+		<option value="//api/name/openMessenger">+ openMessenger</option>
+		
+		<option value="//api/name/shareAnimatedGIF:withMetadata:withContext:">+ shareAnimatedGIF:withMetadata:withContext:</option>
+		
+		<option value="//api/name/shareAnimatedGIF:withOptions:">+ shareAnimatedGIF:withOptions:</option>
+		
+		<option value="//api/name/shareAnimatedWebP:withMetadata:withContext:">+ shareAnimatedWebP:withMetadata:withContext:</option>
+		
+		<option value="//api/name/shareAnimatedWebP:withOptions:">+ shareAnimatedWebP:withOptions:</option>
+		
+		<option value="//api/name/shareAudio:withMetadata:withContext:">+ shareAudio:withMetadata:withContext:</option>
+		
+		<option value="//api/name/shareAudio:withOptions:">+ shareAudio:withOptions:</option>
+		
+		<option value="//api/name/shareImage:withMetadata:withContext:">+ shareImage:withMetadata:withContext:</option>
+		
+		<option value="//api/name/shareImage:withOptions:">+ shareImage:withOptions:</option>
+		
+		<option value="//api/name/shareVideo:withMetadata:withContext:">+ shareVideo:withMetadata:withContext:</option>
+		
+		<option value="//api/name/shareVideo:withOptions:">+ shareVideo:withOptions:</option>
+		
+	</optgroup>
+	
+
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">FBSDKMessengerSharer Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>FBSDKMessengerSharer.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>@class FBSDKMessengerSharer</p>
+
+<p>@abstract
+The FBSDKMessengerSharer is used to share media from apps into Messenger. The underlying
+mechanism used to share data between apps is UIPasteboard</p>
+
+<p>@discussion
+- FacebookAppID must be set in the your app&rsquo;s Info.plist with the Facebook App Id
+- Any existing data in the system&rsquo;s public pasteboard will get overwritten with the shared media
+- Once the data is shared in Messenger, the pasteboard with be cleared
+- The following strings need to be translated in your app:
+    NSLocalizedString(@&ldquo;Get Messenger&rdquo;, @&ldquo;Alert title telling a user they need to install Messenger&rdquo;)
+    NSLocalizedString(@&ldquo;You are using an older version of Messenger that does not support this feature.&rdquo;, @&ldquo;Alert message when an old version of messenger is installed&rdquo;)
+    NSLocalizedString(@&ldquo;Not Now&rdquo;, @&ldquo;Button label when user doesn&rsquo;t want to install Messenger&rdquo;)
+    NSLocalizedString(@&ldquo;Install&rdquo;, @&ldquo;Button label to install Messenger&rdquo;)
+    NSLocalizedString(@&ldquo;Send&rdquo;, @&ldquo;Button label for sending a message&rdquo;)</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/messengerPlatformCapabilities" title="messengerPlatformCapabilities"></a>
+	<h3 class="method-title"><code><a href="#//api/name/messengerPlatformCapabilities">+&nbsp;messengerPlatformCapabilities</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>@abstract
+This method checks the currently installed version of Messenger to see what SDK capabilities it has</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (FBSDKMessengerPlatformCapability)messengerPlatformCapabilities</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>bitmask of the Messenger capabilities</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>@abstract
+This method checks the currently installed version of Messenger to see what SDK capabilities it has</p>
+
+<p>@discussion
+Before sharing any media, first use this bitmask to check to see if it can be shared to Messenger</p>
+
+<p>@deprecated
+This method is deprecated as of iOS 9</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">FBSDKMessengerSharer.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/openMessenger" title="openMessenger"></a>
+	<h3 class="method-title"><code><a href="#//api/name/openMessenger">+&nbsp;openMessenger</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>@abstract
+Call this method to open Messenger</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)openMessenger</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>@abstract
+Call this method to open Messenger</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">FBSDKMessengerSharer.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/shareImage:withMetadata:withContext:" title="shareImage:withMetadata:withContext:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/shareImage:withMetadata:withContext:">+&nbsp;shareImage:withMetadata:withContext:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>@abstract
+Call this method to open Messenger and share an image.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)shareImage:(UIImage *)<em>image</em> withMetadata:(NSString *)<em>metadata</em> withContext:(FBSDKMessengerContext *)<em>context</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>image</code></th>
+						<td><p>The image to be shared in Messenger</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>metadata</code></th>
+						<td><p>Additional optional information to be sent to Messenger which is sent back to
+the user&rsquo;s app when they reply to an attributed message. This may be nil.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>context</code></th>
+						<td><p>The way the content is to be shared in Messenger. If nil, a standard share will take place.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>@abstract
+Call this method to open Messenger and share an image.</p>
+
+<p>@deprecated
+use <a href="#//api/name/shareImage:withOptions:">shareImage:withOptions:</a> instead</p><p>If there is not an installed version of Messenger on the device that supports the share, an alert will be presented to notify the user.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">FBSDKMessengerSharer.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/shareImage:withOptions:" title="shareImage:withOptions:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/shareImage:withOptions:">+&nbsp;shareImage:withOptions:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>@abstract
+Call this method to open Messenger and share an image.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)shareImage:(UIImage *)<em>image</em> withOptions:(FBSDKMessengerShareOptions *)<em>options</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>image</code></th>
+						<td><p>The image to be shared in Messenger</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>options</code></th>
+						<td><p>Additional optional parameters that affect the way the content is shared</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>@abstract
+Call this method to open Messenger and share an image.</p><p>If there is not an installed version of Messenger on the device that supports the share, an alert will be presented to notify the user.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">FBSDKMessengerSharer.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/shareAnimatedGIF:withMetadata:withContext:" title="shareAnimatedGIF:withMetadata:withContext:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/shareAnimatedGIF:withMetadata:withContext:">+&nbsp;shareAnimatedGIF:withMetadata:withContext:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>@abstract
+Call this method to open Messenger and share an animated GIF.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)shareAnimatedGIF:(NSData *)<em>animatedGIFData</em> withMetadata:(NSString *)<em>metadata</em> withContext:(FBSDKMessengerContext *)<em>context</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>animatedGIFData</code></th>
+						<td><p>The animated GIF to be shared in Messenger</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>metadata</code></th>
+						<td><p>Additional optional information to be sent to Messenger which is sent back to
+the user&rsquo;s app when they reply to an attributed message. This may be nil.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>context</code></th>
+						<td><p>The way the content is to be shared in Messenger. If nil, a standard share will take place.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>@abstract
+Call this method to open Messenger and share an animated GIF.</p>
+
+<p>@deprecated
+use <a href="#//api/name/shareAnimatedGIF:withOptions:">shareAnimatedGIF:withOptions:</a> instead</p><p>If there is not an installed version of Messenger on the device that supports the share, an alert will be presented to notify the user.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">FBSDKMessengerSharer.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/shareAnimatedGIF:withOptions:" title="shareAnimatedGIF:withOptions:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/shareAnimatedGIF:withOptions:">+&nbsp;shareAnimatedGIF:withOptions:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>@abstract
+Call this method to open Messenger and share an animated GIF.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)shareAnimatedGIF:(NSData *)<em>animatedGIFData</em> withOptions:(FBSDKMessengerShareOptions *)<em>options</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>animatedGIFData</code></th>
+						<td><p>The animated GIF to be shared in Messenger</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>options</code></th>
+						<td><p>Additional optional parameters that affect the way the content is shared</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>@abstract
+Call this method to open Messenger and share an animated GIF.</p><p>If there is not an installed version of Messenger on the device that supports the share, an alert will be presented to notify the user.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">FBSDKMessengerSharer.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/shareAnimatedWebP:withMetadata:withContext:" title="shareAnimatedWebP:withMetadata:withContext:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/shareAnimatedWebP:withMetadata:withContext:">+&nbsp;shareAnimatedWebP:withMetadata:withContext:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>@abstract
+Call this method to open Messenger and share an animated GIF.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)shareAnimatedWebP:(NSData *)<em>animatedWebPData</em> withMetadata:(NSString *)<em>metadata</em> withContext:(FBSDKMessengerContext *)<em>context</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>animatedWebPData</code></th>
+						<td><p>The animated WebP image to be shared in Messenger</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>metadata</code></th>
+						<td><p>Additional optional information to be sent to Messenger which is sent back to
+the user&rsquo;s app when they reply to an attributed message. This may be nil.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>context</code></th>
+						<td><p>The way the content is to be shared in Messenger. If nil, a standard share will take place.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>@abstract
+Call this method to open Messenger and share an animated GIF.</p>
+
+<p>@deprecated
+use <a href="#//api/name/shareAnimatedWebP:withOptions:">shareAnimatedWebP:withOptions:</a> instead</p><p>If there is not an installed version of Messenger on the device that supports the share, an alert will be presented to notify the user.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">FBSDKMessengerSharer.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/shareAnimatedWebP:withOptions:" title="shareAnimatedWebP:withOptions:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/shareAnimatedWebP:withOptions:">+&nbsp;shareAnimatedWebP:withOptions:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>@abstract
+Call this method to open Messenger and share an animated GIF.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)shareAnimatedWebP:(NSData *)<em>animatedWebPData</em> withOptions:(FBSDKMessengerShareOptions *)<em>options</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>animatedWebPData</code></th>
+						<td><p>The animated WebP image to be shared in Messenger</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>options</code></th>
+						<td><p>Additional optional parameters that affect the way the content is shared</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>@abstract
+Call this method to open Messenger and share an animated GIF.</p><p>If there is not an installed version of Messenger on the device that supports the share, an alert will be presented to notify the user.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">FBSDKMessengerSharer.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/shareVideo:withMetadata:withContext:" title="shareVideo:withMetadata:withContext:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/shareVideo:withMetadata:withContext:">+&nbsp;shareVideo:withMetadata:withContext:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>@abstract
+Call this method to open Messenger and share a video.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)shareVideo:(NSData *)<em>videoData</em> withMetadata:(NSString *)<em>metadata</em> withContext:(FBSDKMessengerContext *)<em>context</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>videoData</code></th>
+						<td><p>The image to be shared in Messenger</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>metadata</code></th>
+						<td><p>Additional optional information to be sent to Messenger which is sent back to
+the user&rsquo;s app when they reply to an attributed message. This may be nil.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>context</code></th>
+						<td><p>The way the content is to be shared in Messenger. If nil, a standard share will take place.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>@abstract
+Call this method to open Messenger and share a video.</p>
+
+<p>@deprecated
+use shareVideo:withOptions: instead</p>
+
+<p>@discussion
+Note that there&rsquo;s no way to send an AVAsset between apps, so you may need to
+serialize your AVAsset to a file, and get an NSData representation of the video via
+[NSData dataWithContentsOfFile:filepath];</p><p>If there is not an installed version of Messenger on the device that supports the share, an alert will be presented to notify the user.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">FBSDKMessengerSharer.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/shareVideo:withOptions:" title="shareVideo:withOptions:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/shareVideo:withOptions:">+&nbsp;shareVideo:withOptions:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>@abstract
+Call this method to open Messenger and share a video.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)shareVideo:(NSData *)<em>videoData</em> withOptions:(FBSDKMessengerShareOptions *)<em>options</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>videoData</code></th>
+						<td><p>The image to be shared in Messenger</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>options</code></th>
+						<td><p>Additional optional parameters that affect the way the content is shared</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>@abstract
+Call this method to open Messenger and share a video.</p>
+
+<p>@discussion
+Note that there&rsquo;s no way to send an AVAsset between apps, so you may need to
+serialize your AVAsset to a file, and get an NSData representation of the video via
+[NSData dataWithContentsOfFile:filepath];</p><p>If there is not an installed version of Messenger on the device that supports the share, an alert will be presented to notify the user.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">FBSDKMessengerSharer.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/shareAudio:withMetadata:withContext:" title="shareAudio:withMetadata:withContext:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/shareAudio:withMetadata:withContext:">+&nbsp;shareAudio:withMetadata:withContext:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>@abstract
+Call this method to open Messenger and share an audio file.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)shareAudio:(NSData *)<em>audioData</em> withMetadata:(NSString *)<em>metadata</em> withContext:(FBSDKMessengerContext *)<em>context</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>audioData</code></th>
+						<td><p>The audio to be shared in Messenger</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>metadata</code></th>
+						<td><p>Additional optional information to be sent to Messenger</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>@abstract
+Call this method to open Messenger and share an audio file.</p>
+
+<p>@deprecated
+use shareAudio:withOptions: instead</p>
+
+<p>@discussion
+Note that there&rsquo;s no way to send an AVAsset between apps, so you may need to
+serialize your AVAsset to a file, and get an NSData representation of the video via
+[NSData dataWithContentsOfFile:filepath];</p><p>If there is not an installed version of Messenger on the device that supports the share, an alert will be presented to notify the user.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">FBSDKMessengerSharer.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/shareAudio:withOptions:" title="shareAudio:withOptions:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/shareAudio:withOptions:">+&nbsp;shareAudio:withOptions:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>@abstract
+Call this method to open Messenger and share an audio file.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)shareAudio:(NSData *)<em>audioData</em> withOptions:(FBSDKMessengerShareOptions *)<em>options</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>audioData</code></th>
+						<td><p>The audio to be shared in Messenger</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>options</code></th>
+						<td><p>Additional optional parameters that affect the way the content is shared</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>@abstract
+Call this method to open Messenger and share an audio file.</p>
+
+<p>@discussion
+Note that there&rsquo;s no way to send an AVAsset between apps, so you may need to
+serialize your AVAsset to a file, and get an NSData representation of the video via
+[NSData dataWithContentsOfFile:filepath];</p><p>If there is not an installed version of Messenger on the device that supports the share, an alert will be presented to notify the user.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">FBSDKMessengerSharer.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2018 yoyo. All rights reserved. Updated: 2018-04-03</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

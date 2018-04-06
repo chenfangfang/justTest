@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>FBSDKLoginManager Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">philm </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">yoyo</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/defaultAudience">defaultAudience</option>
+		
+		<option value="//api/name/loginBehavior">loginBehavior</option>
+		
+	</optgroup>
+	
+
+	
+	<optgroup label="Class Methods">
+		
+		<option value="//api/name/renewSystemCredentials:">+ renewSystemCredentials:</option>
+		
+	</optgroup>
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/logInWithPublishPermissions:fromViewController:handler:">- logInWithPublishPermissions:fromViewController:handler:</option>
+		
+		<option value="//api/name/logInWithPublishPermissions:handler:">- logInWithPublishPermissions:handler:</option>
+		
+		<option value="//api/name/logInWithReadPermissions:fromViewController:handler:">- logInWithReadPermissions:fromViewController:handler:</option>
+		
+		<option value="//api/name/logInWithReadPermissions:handler:">- logInWithReadPermissions:handler:</option>
+		
+		<option value="//api/name/logOut">- logOut</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">FBSDKLoginManager Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>FBSDKLoginManager.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p><code>FBSDKLoginManager</code> works directly with <a href="../Classes/FBSDKAccessToken.html#//api/name/currentAccessToken"><code>[FBSDKAccessToken currentAccessToken]</code></a> and
+  sets the &ldquo;currentAccessToken&rdquo; upon successful authorizations (or sets <code>nil</code> in case of <a href="#//api/name/logOut"><code>logOut</code></a>).</p>
+
+<p>You should check <a href="../Classes/FBSDKAccessToken.html#//api/name/currentAccessToken"><code>[FBSDKAccessToken currentAccessToken]</code></a> before calling logIn* to see if there is
+a cached token available (typically in your viewDidLoad).</p>
+
+<p>If you are managing your own token instances outside of &ldquo;currentAccessToken&rdquo;, you will need to set
+&ldquo;currentAccessToken&rdquo; before calling logIn* to authorize further permissions on your tokens.</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/defaultAudience" title="defaultAudience"></a>
+	<h3 class="method-title"><code><a href="#//api/name/defaultAudience">&nbsp;&nbsp;defaultAudience</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>the default audience.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (assign, nonatomic) FBSDKDefaultAudience defaultAudience</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>you should set this if you intend to ask for publish permissions.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">FBSDKLoginManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/loginBehavior" title="loginBehavior"></a>
+	<h3 class="method-title"><code><a href="#//api/name/loginBehavior">&nbsp;&nbsp;loginBehavior</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>the login behavior</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (assign, nonatomic) FBSDKLoginBehavior loginBehavior</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">FBSDKLoginManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/logInWithReadPermissions:handler:" title="logInWithReadPermissions:handler:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/logInWithReadPermissions:handler:">&ndash;&nbsp;logInWithReadPermissions:handler:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>use <a href="#//api/name/logInWithReadPermissions:fromViewController:handler:">logInWithReadPermissions:fromViewController:handler:</a> instead (<b class="deprecated">Deprecated:</b><span class="deprecated"> use logInWithReadPermissions:fromViewController:handler: instead</span>)</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)logInWithReadPermissions:(NSArray *)<em>permissions</em> handler:(FBSDKLoginManagerRequestTokenHandler)<em>handler</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">FBSDKLoginManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/logInWithPublishPermissions:handler:" title="logInWithPublishPermissions:handler:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/logInWithPublishPermissions:handler:">&ndash;&nbsp;logInWithPublishPermissions:handler:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>use <a href="#//api/name/logInWithPublishPermissions:fromViewController:handler:">logInWithPublishPermissions:fromViewController:handler:</a> instead (<b class="deprecated">Deprecated:</b><span class="deprecated"> use logInWithPublishPermissions:fromViewController:handler: instead</span>)</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)logInWithPublishPermissions:(NSArray *)<em>permissions</em> handler:(FBSDKLoginManagerRequestTokenHandler)<em>handler</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">FBSDKLoginManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/logInWithReadPermissions:fromViewController:handler:" title="logInWithReadPermissions:fromViewController:handler:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/logInWithReadPermissions:fromViewController:handler:">&ndash;&nbsp;logInWithReadPermissions:fromViewController:handler:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Logs the user in or authorizes additional permissions.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)logInWithReadPermissions:(NSArray *)<em>permissions</em> fromViewController:(UIViewController *)<em>fromViewController</em> handler:(FBSDKLoginManagerRequestTokenHandler)<em>handler</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>permissions</code></th>
+						<td><p>the optional array of permissions. Note this is converted to NSSet and is only
+  an NSArray for the convenience of literal syntax.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>fromViewController</code></th>
+						<td><p>the view controller to present from. If nil, the topmost view controller will be
+  automatically determined as best as possible.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>handler</code></th>
+						<td><p>the callback.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Use this method when asking for read permissions. You should only ask for permissions when they
+  are needed and explain the value to the user. You can inspect the result.declinedPermissions to also
+  provide more information to the user if they decline permissions.</p>
+
+<p>This method will present UI the user. You typically should check if <a href="../Classes/FBSDKAccessToken.html#//api/name/currentAccessToken"><code>[FBSDKAccessToken currentAccessToken]</code></a>
+already contains the permissions you need before asking to reduce unnecessary app switching. For example,
+you could make that check at viewDidLoad.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">FBSDKLoginManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/logInWithPublishPermissions:fromViewController:handler:" title="logInWithPublishPermissions:fromViewController:handler:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/logInWithPublishPermissions:fromViewController:handler:">&ndash;&nbsp;logInWithPublishPermissions:fromViewController:handler:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Logs the user in or authorizes additional permissions.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)logInWithPublishPermissions:(NSArray *)<em>permissions</em> fromViewController:(UIViewController *)<em>fromViewController</em> handler:(FBSDKLoginManagerRequestTokenHandler)<em>handler</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>permissions</code></th>
+						<td><p>the optional array of permissions. Note this is converted to NSSet and is only
+an NSArray for the convenience of literal syntax.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>fromViewController</code></th>
+						<td><p>the view controller to present from. If nil, the topmost view controller will be
+automatically determined as best as possible.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>handler</code></th>
+						<td><p>the callback.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Use this method when asking for publish permissions. You should only ask for permissions when they
+are needed and explain the value to the user. You can inspect the result.declinedPermissions to also
+provide more information to the user if they decline permissions.</p>
+
+<p>This method will present UI the user. You typically should check if <a href="../Classes/FBSDKAccessToken.html#//api/name/currentAccessToken"><code>[FBSDKAccessToken currentAccessToken]</code></a>
+already contains the permissions you need before asking to reduce unnecessary app switching. For example,
+you could make that check at viewDidLoad.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">FBSDKLoginManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/logOut" title="logOut"></a>
+	<h3 class="method-title"><code><a href="#//api/name/logOut">&ndash;&nbsp;logOut</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Logs the user out</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)logOut</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This calls [FBSDKAccessToken setCurrentAccessToken:nil] and [FBSDKProfile setCurrentProfile:nil].</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">FBSDKLoginManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/renewSystemCredentials:" title="renewSystemCredentials:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/renewSystemCredentials:">+&nbsp;renewSystemCredentials:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Issues an asynchronous renewCredentialsForAccount call to the device&rsquo;s Facebook account store.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)renewSystemCredentials:(void ( ^ ) ( ACAccountCredentialRenewResult result , NSError *error ))<em>handler</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>handler</code></th>
+						<td><p>The completion handler to call when the renewal is completed. This can be invoked on an arbitrary thread.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>@method</p><p>This can be used to explicitly renew account credentials and is provided as a convenience wrapper around
+<code>[ACAccountStore renewCredentialsForAccount:completion]</code>. Note the method will not issue the renewal call if the the
+Facebook account has not been set on the device, or if access had not been granted to the account (though the handler
+wil receive an error).</p>
+
+<p>If the <a href="../Classes/FBSDKAccessToken.html#//api/name/currentAccessToken"><code>[FBSDKAccessToken currentAccessToken]</code></a> was from the account store, a succesful renewal will also set
+a new &ldquo;currentAccessToken&rdquo;.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">FBSDKLoginManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2018 yoyo. All rights reserved. Updated: 2018-04-03</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>
