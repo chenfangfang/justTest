@@ -1,0 +1,3613 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>TencentOAuth Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">philm </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">yoyo</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/accessToken">accessToken</option>
+		
+		<option value="//api/name/appId">appId</option>
+		
+		<option value="//api/name/authMode">authMode</option>
+		
+		<option value="//api/name/authShareType">authShareType</option>
+		
+		<option value="//api/name/expirationDate">expirationDate</option>
+		
+		<option value="//api/name/localAppId">localAppId</option>
+		
+		<option value="//api/name/openId">openId</option>
+		
+		<option value="//api/name/passData">passData</option>
+		
+		<option value="//api/name/redirectURI">redirectURI</option>
+		
+		<option value="//api/name/sessionDelegate">sessionDelegate</option>
+		
+		<option value="//api/name/skey">skey</option>
+		
+		<option value="//api/name/uin">uin</option>
+		
+		<option value="//api/name/unionid">unionid</option>
+		
+	</optgroup>
+	
+
+	
+	<optgroup label="Class Methods">
+		
+		<option value="//api/name/CanHandleOpenURL:">+ CanHandleOpenURL:</option>
+		
+		<option value="//api/name/HandleOpenURL:">+ HandleOpenURL:</option>
+		
+		<option value="//api/name/authorizeState">+ authorizeState</option>
+		
+		<option value="//api/name/getLastErrorMsg">+ getLastErrorMsg</option>
+		
+		<option value="//api/name/iphoneQQInstalled">+ iphoneQQInstalled</option>
+		
+		<option value="//api/name/iphoneQQSupportSSOLogin">+ iphoneQQSupportSSOLogin</option>
+		
+		<option value="//api/name/iphoneQQVersion">+ iphoneQQVersion</option>
+		
+		<option value="//api/name/iphoneQZoneInstalled">+ iphoneQZoneInstalled</option>
+		
+		<option value="//api/name/iphoneQZoneSupportSSOLogin">+ iphoneQZoneSupportSSOLogin</option>
+		
+		<option value="//api/name/iphoneTIMInstalled">+ iphoneTIMInstalled</option>
+		
+		<option value="//api/name/iphoneTIMSupportSSOLogin">+ iphoneTIMSupportSSOLogin</option>
+		
+		<option value="//api/name/iphoneTIMVersion">+ iphoneTIMVersion</option>
+		
+		<option value="//api/name/isLiteSDK">+ isLiteSDK</option>
+		
+		<option value="//api/name/sdkSubVersion">+ sdkSubVersion</option>
+		
+		<option value="//api/name/sdkVersion">+ sdkVersion</option>
+		
+	</optgroup>
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/RequestUnionId">- RequestUnionId</option>
+		
+		<option value="//api/name/addAlbumWithParams:">- addAlbumWithParams:</option>
+		
+		<option value="//api/name/addOneBlogWithParams:">- addOneBlogWithParams:</option>
+		
+		<option value="//api/name/addShareWithParams:">- addShareWithParams:</option>
+		
+		<option value="//api/name/addTopicWithParams:">- addTopicWithParams:</option>
+		
+		<option value="//api/name/authorize:">- authorize:</option>
+		
+		<option value="//api/name/authorize:inSafari:">- authorize:inSafari:</option>
+		
+		<option value="//api/name/authorize:localAppId:inSafari:">- authorize:localAppId:inSafari:</option>
+		
+		<option value="//api/name/cancel:">- cancel:</option>
+		
+		<option value="//api/name/cgiRequestWithURL:method:params:callback:">- cgiRequestWithURL:method:params:callback:</option>
+		
+		<option value="//api/name/checkPageFansWithParams:">- checkPageFansWithParams:</option>
+		
+		<option value="//api/name/getListAlbum">- getListAlbum</option>
+		
+		<option value="//api/name/getListPhotoWithParams:">- getListPhotoWithParams:</option>
+		
+		<option value="//api/name/getServerSideCode">- getServerSideCode</option>
+		
+		<option value="//api/name/getUserInfo">- getUserInfo</option>
+		
+		<option value="//api/name/getVipInfo">- getVipInfo</option>
+		
+		<option value="//api/name/getVipRichInfo">- getVipRichInfo</option>
+		
+		<option value="//api/name/incrAuthWithPermissions:">- incrAuthWithPermissions:</option>
+		
+		<option value="//api/name/initWithAppId:andDelegate:">- initWithAppId:andDelegate:</option>
+		
+		<option value="//api/name/isSessionValid">- isSessionValid</option>
+		
+		<option value="//api/name/logout:">- logout:</option>
+		
+		<option value="//api/name/openSDKWebViewQQShareEnable">- openSDKWebViewQQShareEnable</option>
+		
+		<option value="//api/name/reauthorizeWithPermissions:">- reauthorizeWithPermissions:</option>
+		
+		<option value="//api/name/sendAPIRequest:callback:">- sendAPIRequest:callback:</option>
+		
+		<option value="//api/name/sendAppInvitationWithDescription:imageURL:source:">- sendAppInvitationWithDescription:imageURL:source:</option>
+		
+		<option value="//api/name/sendChallenge:type:imageURL:message:source:">- sendChallenge:type:imageURL:message:source:</option>
+		
+		<option value="//api/name/sendGiftRequest:exclude:specified:only:type:title:message:imageURL:source:">- sendGiftRequest:exclude:specified:only:type:title:message:imageURL:source:</option>
+		
+		<option value="//api/name/sendStory:friendList:">- sendStory:friendList:</option>
+		
+		<option value="//api/name/setUserHeadpic:">- setUserHeadpic:</option>
+		
+		<option value="//api/name/setUserHeadpic:andViewController:">- setUserHeadpic:andViewController:</option>
+		
+		<option value="//api/name/uploadPicWithParams:">- uploadPicWithParams:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">TencentOAuth Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>TencentOAuth.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/accessToken" title="accessToken"></a>
+	<h3 class="method-title"><code><a href="#//api/name/accessToken">&nbsp;&nbsp;accessToken</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Access Token凭证，用于后续访问各开放接口</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) NSString *accessToken</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Access Token凭证，用于后续访问各开放接口</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TencentOAuth.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/expirationDate" title="expirationDate"></a>
+	<h3 class="method-title"><code><a href="#//api/name/expirationDate">&nbsp;&nbsp;expirationDate</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Access Token的失效期</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) NSDate *expirationDate</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Access Token的失效期</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TencentOAuth.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/sessionDelegate" title="sessionDelegate"></a>
+	<h3 class="method-title"><code><a href="#//api/name/sessionDelegate">&nbsp;&nbsp;sessionDelegate</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>已实现的开放接口的回调委托对象</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) id&lt;TencentSessionDelegate&gt; sessionDelegate</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>已实现的开放接口的回调委托对象</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TencentOAuth.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/localAppId" title="localAppId"></a>
+	<h3 class="method-title"><code><a href="#//api/name/localAppId">&nbsp;&nbsp;localAppId</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>第三方应用在开发过程中设置的URLSchema，用于浏览器登录后后跳到第三方应用</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) NSString *localAppId</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>第三方应用在开发过程中设置的URLSchema，用于浏览器登录后后跳到第三方应用</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TencentOAuth.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/openId" title="openId"></a>
+	<h3 class="method-title"><code><a href="#//api/name/openId">&nbsp;&nbsp;openId</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>用户授权登录后对该用户的唯一标识</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) NSString *openId</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>用户授权登录后对该用户的唯一标识</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TencentOAuth.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/redirectURI" title="redirectURI"></a>
+	<h3 class="method-title"><code><a href="#//api/name/redirectURI">&nbsp;&nbsp;redirectURI</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>用户登录成功过后的跳转页面地址</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) NSString *redirectURI</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>用户登录成功过后的跳转页面地址</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TencentOAuth.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/appId" title="appId"></a>
+	<h3 class="method-title"><code><a href="#//api/name/appId">&nbsp;&nbsp;appId</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>第三方应用在互联开放平台申请的appID</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) NSString *appId</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>第三方应用在互联开放平台申请的appID</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TencentOAuth.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/uin" title="uin"></a>
+	<h3 class="method-title"><code><a href="#//api/name/uin">&nbsp;&nbsp;uin</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>主要是互娱的游戏设置uin</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) NSString *uin</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>主要是互娱的游戏设置uin</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TencentOAuth.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/skey" title="skey"></a>
+	<h3 class="method-title"><code><a href="#//api/name/skey">&nbsp;&nbsp;skey</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>主要是互娱的游戏设置鉴定票据</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) NSString *skey</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>主要是互娱的游戏设置鉴定票据</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TencentOAuth.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/passData" title="passData"></a>
+	<h3 class="method-title"><code><a href="#//api/name/passData">&nbsp;&nbsp;passData</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>登陆透传的数据</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) NSDictionary *passData</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>登陆透传的数据</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TencentOAuth.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/authMode" title="authMode"></a>
+	<h3 class="method-title"><code><a href="#//api/name/authMode">&nbsp;&nbsp;authMode</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>授权方式(Client Side Token或者Server Side Code)</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) TencentAuthMode authMode</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>授权方式(Client Side Token或者Server Side Code)</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TencentOAuth.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/unionid" title="unionid"></a>
+	<h3 class="method-title"><code><a href="#//api/name/unionid">&nbsp;&nbsp;unionid</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>union id</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) NSString *unionid</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>union id</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TencentOAuth.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/authShareType" title="authShareType"></a>
+	<h3 class="method-title"><code><a href="#//api/name/authShareType">&nbsp;&nbsp;authShareType</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>第三方在授权登录/分享 时选择 QQ，还是TIM 。在授权前一定要指定其中一个类型</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) TencentAuthShareType authShareType</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>第三方在授权登录/分享 时选择 QQ，还是TIM 。在授权前一定要指定其中一个类型</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TencentOAuth.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/sdkVersion" title="sdkVersion"></a>
+	<h3 class="method-title"><code><a href="#//api/name/sdkVersion">+&nbsp;sdkVersion</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>用来获得当前sdk的版本号</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (NSString *)sdkVersion</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>返回sdk版本号</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>用来获得当前sdk的版本号</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TencentOAuth.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/sdkSubVersion" title="sdkSubVersion"></a>
+	<h3 class="method-title"><code><a href="#//api/name/sdkSubVersion">+&nbsp;sdkSubVersion</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>用来获得当前sdk的小版本号</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (NSString *)sdkSubVersion</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>返回sdk小版本号</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>用来获得当前sdk的小版本号</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TencentOAuth.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/isLiteSDK" title="isLiteSDK"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isLiteSDK">+&nbsp;isLiteSDK</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>用来获得当前sdk的是否精简版</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (BOOL)isLiteSDK</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>返回YES表示精简版</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>用来获得当前sdk的是否精简版</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TencentOAuth.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/authorizeState" title="authorizeState"></a>
+	<h3 class="method-title"><code><a href="#//api/name/authorizeState">+&nbsp;authorizeState</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>主要是用来帮助判断是否有登陆被发起，但是还没有过返回结果
+\return
+kTencentNotAuthorizeState:无授权
+kTencentSSOAuthorizeState:有人发起了sso授权但无返回
+kTencentWebviewAuthorzieState:有人发起了webview授权还未返回</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (TencentAuthorizeState *)authorizeState</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>主要是用来帮助判断是否有登陆被发起，但是还没有过返回结果
+\return
+kTencentNotAuthorizeState:无授权
+kTencentSSOAuthorizeState:有人发起了sso授权但无返回
+kTencentWebviewAuthorzieState:有人发起了webview授权还未返回</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TencentOAuth.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/iphoneQQVersion" title="iphoneQQVersion"></a>
+	<h3 class="method-title"><code><a href="#//api/name/iphoneQQVersion">+&nbsp;iphoneQQVersion</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>用来获得当前手机qq的版本号</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (QQVersion)iphoneQQVersion</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>返回手机qq版本号</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>用来获得当前手机qq的版本号</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TencentOAuth.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/iphoneTIMVersion" title="iphoneTIMVersion"></a>
+	<h3 class="method-title"><code><a href="#//api/name/iphoneTIMVersion">+&nbsp;iphoneTIMVersion</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>用来获得当前手机TIM的版本号</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (QQVersion)iphoneTIMVersion</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>返回手机qq版本号</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>用来获得当前手机TIM的版本号</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TencentOAuth.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/initWithAppId:andDelegate:" title="initWithAppId:andDelegate:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initWithAppId:andDelegate:">&ndash;&nbsp;initWithAppId:andDelegate:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>初始化TencentOAuth对象</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (id)initWithAppId:(NSString *)<em>appId</em> andDelegate:(id&lt;TencentSessionDelegate&gt;)<em>delegate</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>appId</code></th>
+						<td><p>第三方应用在互联开放平台申请的唯一标识</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>delegate</code></th>
+						<td><p>第三方应用用于接收请求返回结果的委托对象</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>初始化后的授权登录对象</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>初始化TencentOAuth对象</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TencentOAuth.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/iphoneQQInstalled" title="iphoneQQInstalled"></a>
+	<h3 class="method-title"><code><a href="#//api/name/iphoneQQInstalled">+&nbsp;iphoneQQInstalled</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>判断用户手机上是否安装手机QQ</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (BOOL)iphoneQQInstalled</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>YES:安装 NO:没安装</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>判断用户手机上是否安装手机QQ</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TencentOAuth.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/iphoneTIMInstalled" title="iphoneTIMInstalled"></a>
+	<h3 class="method-title"><code><a href="#//api/name/iphoneTIMInstalled">+&nbsp;iphoneTIMInstalled</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>判断用户手机上是否安装手机TIM</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (BOOL)iphoneTIMInstalled</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>YES:安装 NO:没安装</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>判断用户手机上是否安装手机TIM</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TencentOAuth.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/iphoneQQSupportSSOLogin" title="iphoneQQSupportSSOLogin"></a>
+	<h3 class="method-title"><code><a href="#//api/name/iphoneQQSupportSSOLogin">+&nbsp;iphoneQQSupportSSOLogin</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>判断用户手机上的手机QQ是否支持SSO登录</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (BOOL)iphoneQQSupportSSOLogin</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>YES:支持 NO:不支持</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>判断用户手机上的手机QQ是否支持SSO登录</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TencentOAuth.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/iphoneTIMSupportSSOLogin" title="iphoneTIMSupportSSOLogin"></a>
+	<h3 class="method-title"><code><a href="#//api/name/iphoneTIMSupportSSOLogin">+&nbsp;iphoneTIMSupportSSOLogin</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>判断用户手机上的手机TIM是否支持SSO登录</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (BOOL)iphoneTIMSupportSSOLogin</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>YES:支持 NO:不支持</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>判断用户手机上的手机TIM是否支持SSO登录</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TencentOAuth.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/iphoneQZoneInstalled" title="iphoneQZoneInstalled"></a>
+	<h3 class="method-title"><code><a href="#//api/name/iphoneQZoneInstalled">+&nbsp;iphoneQZoneInstalled</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>判断用户手机上是否安装手机QZone</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (BOOL)iphoneQZoneInstalled</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>YES:安装 NO:没安装</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>判断用户手机上是否安装手机QZone</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TencentOAuth.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/iphoneQZoneSupportSSOLogin" title="iphoneQZoneSupportSSOLogin"></a>
+	<h3 class="method-title"><code><a href="#//api/name/iphoneQZoneSupportSSOLogin">+&nbsp;iphoneQZoneSupportSSOLogin</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>判断用户手机上的手机QZone是否支持SSO登录</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (BOOL)iphoneQZoneSupportSSOLogin</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>YES:支持 NO:不支持</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>判断用户手机上的手机QZone是否支持SSO登录</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TencentOAuth.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/authorize:" title="authorize:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/authorize:">&ndash;&nbsp;authorize:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>登录授权</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)authorize:(NSArray *)<em>permissions</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>permissions</code></th>
+						<td><p>授权信息列</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>登录授权</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TencentOAuth.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/authorize:inSafari:" title="authorize:inSafari:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/authorize:inSafari:">&ndash;&nbsp;authorize:inSafari:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>登录授权</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)authorize:(NSArray *)<em>permissions</em> inSafari:(BOOL)<em>bInSafari</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>permissions</code></th>
+						<td><p>授权信息列表</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>bInSafari</code></th>
+						<td><p>是否使用safari进行登录.<b>IOS SDK 1.3版本开始此参数废除</b></p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>登录授权</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TencentOAuth.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/authorize:localAppId:inSafari:" title="authorize:localAppId:inSafari:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/authorize:localAppId:inSafari:">&ndash;&nbsp;authorize:localAppId:inSafari:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>登录授权</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)authorize:(NSArray *)<em>permissions</em> localAppId:(NSString *)<em>localAppId</em> inSafari:(BOOL)<em>bInSafari</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>permissions</code></th>
+						<td><p>授权信息列表</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>localAppId</code></th>
+						<td><p>应用APPID</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>bInSafari</code></th>
+						<td><p>是否使用safari进行登录.<b>IOS SDK 1.3版本开始此参数废除</b></p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>登录授权</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TencentOAuth.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/incrAuthWithPermissions:" title="incrAuthWithPermissions:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/incrAuthWithPermissions:">&ndash;&nbsp;incrAuthWithPermissions:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>增量授权，因用户没有授予相应接口调用的权限，需要用户确认是否授权</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)incrAuthWithPermissions:(NSArray *)<em>permissions</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>permissions</code></th>
+						<td><p>需增量授权的信息列表</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>增量授权调用是否成功</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>增量授权，因用户没有授予相应接口调用的权限，需要用户确认是否授权</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TencentOAuth.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/reauthorizeWithPermissions:" title="reauthorizeWithPermissions:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/reauthorizeWithPermissions:">&ndash;&nbsp;reauthorizeWithPermissions:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>重新授权，因token废除或失效导致接口调用失败，需用户重新授权</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)reauthorizeWithPermissions:(NSArray *)<em>permissions</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>permissions</code></th>
+						<td><p>授权信息列表，同登录授权</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>授权调用是否成功</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>重新授权，因token废除或失效导致接口调用失败，需用户重新授权</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TencentOAuth.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/RequestUnionId" title="RequestUnionId"></a>
+	<h3 class="method-title"><code><a href="#//api/name/RequestUnionId">&ndash;&nbsp;RequestUnionId</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>获取UnindID,可以根据UnindID的比较来确定OpenID是否属于同一个用户</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)RequestUnionId</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>NO未登录，信息不足；YES条件满足，发送请求成功，请等待回调</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>获取UnindID,可以根据UnindID的比较来确定OpenID是否属于同一个用户</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TencentOAuth.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/HandleOpenURL:" title="HandleOpenURL:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/HandleOpenURL:">+&nbsp;HandleOpenURL:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>(静态方法)处理应用拉起协议</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (BOOL)HandleOpenURL:(NSURL *)<em>url</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>url</code></th>
+						<td><p>处理被其他应用呼起时的逻辑</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>处理结果，YES表示成功，NO表示失败</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>(静态方法)处理应用拉起协议</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TencentOAuth.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/CanHandleOpenURL:" title="CanHandleOpenURL:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/CanHandleOpenURL:">+&nbsp;CanHandleOpenURL:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>(静态方法)sdk是否可以处理应用拉起协议</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (BOOL)CanHandleOpenURL:(NSURL *)<em>url</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>url</code></th>
+						<td><p>处理被其他应用呼起时的逻辑</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>处理结果，YES表示可以 NO表示不行</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>(静态方法)sdk是否可以处理应用拉起协议</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TencentOAuth.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getLastErrorMsg" title="getLastErrorMsg"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getLastErrorMsg">+&nbsp;getLastErrorMsg</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>(静态方法)获取TencentOAuth调用的上一次错误信息</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (NSString *)getLastErrorMsg</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>(静态方法)获取TencentOAuth调用的上一次错误信息</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TencentOAuth.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getServerSideCode" title="getServerSideCode"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getServerSideCode">&ndash;&nbsp;getServerSideCode</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>以Server Side Code模式授权登录时，通过此接口获取返回的code值;
+以Client Side Token模式授权登录时，忽略此接口。</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSString *)getServerSideCode</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>以Server Side Code模式授权登录时，通过此接口获取返回的code值;
+以Client Side Token模式授权登录时，忽略此接口。</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TencentOAuth.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/logout:" title="logout:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/logout:">&ndash;&nbsp;logout:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>退出登录(退出登录后，TecentOAuth失效，需要重新初始化)</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)logout:(id&lt;TencentSessionDelegate&gt;)<em>delegate</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>delegate</code></th>
+						<td><p>第三方应用用于接收请求返回结果的委托对象</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>退出登录(退出登录后，TecentOAuth失效，需要重新初始化)</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TencentOAuth.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/isSessionValid" title="isSessionValid"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isSessionValid">&ndash;&nbsp;isSessionValid</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>判断登录态是否有效</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)isSessionValid</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>处理结果，YES表示有效，NO表示无效，请用户重新登录授权</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>判断登录态是否有效</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TencentOAuth.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getUserInfo" title="getUserInfo"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getUserInfo">&ndash;&nbsp;getUserInfo</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>获取用户个人信息</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)getUserInfo</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>处理结果，YES表示API调用成功，NO表示API调用失败，登录态失败，重新登录</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>获取用户个人信息</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TencentOAuth.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/openSDKWebViewQQShareEnable" title="openSDKWebViewQQShareEnable"></a>
+	<h3 class="method-title"><code><a href="#//api/name/openSDKWebViewQQShareEnable">&ndash;&nbsp;openSDKWebViewQQShareEnable</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>SDK内置webview实现定向分享时，第三方应用可以根据应用是否在白名单里来开启该配置开关，默认为关闭；
+在白名单里的应用调用该接口后，即打开sdk内置webview的二级白名单开关（相对与sdk后台的白名单），
+那么在sdk后台白名单校验请求失败的情况下，会继续先尝试采用内置webview进行分享。</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)openSDKWebViewQQShareEnable</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>SDK内置webview实现定向分享时，第三方应用可以根据应用是否在白名单里来开启该配置开关，默认为关闭；
+在白名单里的应用调用该接口后，即打开sdk内置webview的二级白名单开关（相对与sdk后台的白名单），
+那么在sdk后台白名单校验请求失败的情况下，会继续先尝试采用内置webview进行分享。</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TencentOAuth.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getListAlbum" title="getListAlbum"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getListAlbum">&ndash;&nbsp;getListAlbum</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>获取用户QZone相册列表
+\attention 需\ref apply_perm</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)getListAlbum</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>处理结果，YES表示API调用成功，NO表示API调用失败，登录态失败，重新登录</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>获取用户QZone相册列表
+\attention 需\ref apply_perm</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TencentOAuth.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getListPhotoWithParams:" title="getListPhotoWithParams:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getListPhotoWithParams:">&ndash;&nbsp;getListPhotoWithParams:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>获取用户QZone相片列表
+\attention 需\ref apply_perm</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)getListPhotoWithParams:(NSMutableDictionary *)<em>params</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>params</code></th>
+						<td><p>参数字典,字典的关键字参见TencentOAuthObject.h中的\ref <a href="../Classes/TCListPhotoDic.html">TCListPhotoDic</a></p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>处理结果，YES表示API调用成功，NO表示API调用失败，登录态失败，重新登录</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>获取用户QZone相片列表
+\attention 需\ref apply_perm</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TencentOAuth.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/addShareWithParams:" title="addShareWithParams:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/addShareWithParams:">&ndash;&nbsp;addShareWithParams:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>分享到QZone</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)addShareWithParams:(NSMutableDictionary *)<em>params</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>params</code></th>
+						<td><p>参数字典,字典的关键字参见TencentOAuthObject.h中的\ref <a href="../Classes/TCAddShareDic.html">TCAddShareDic</a></p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>处理结果，YES表示API调用成功，NO表示API调用失败，登录态失败，重新登录</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>分享到QZone</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TencentOAuth.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/uploadPicWithParams:" title="uploadPicWithParams:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/uploadPicWithParams:">&ndash;&nbsp;uploadPicWithParams:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>上传照片到QZone指定相册
+\attention 需\ref apply_perm</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)uploadPicWithParams:(NSMutableDictionary *)<em>params</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>params</code></th>
+						<td><p>参数字典,字典的关键字参见TencentOAuthObject.h中的\ref <a href="../Classes/TCUploadPicDic.html">TCUploadPicDic</a></p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>处理结果，YES表示API调用成功，NO表示API调用失败，登录态失败，重新登录</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>上传照片到QZone指定相册
+\attention 需\ref apply_perm</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TencentOAuth.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/addAlbumWithParams:" title="addAlbumWithParams:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/addAlbumWithParams:">&ndash;&nbsp;addAlbumWithParams:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>在QZone相册中创建一个新的相册
+\attention 需\ref apply_perm</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)addAlbumWithParams:(NSMutableDictionary *)<em>params</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>params</code></th>
+						<td><p>参数字典,字典的关键字参见TencentOAuthObject.h中的\ref <a href="../Classes/TCAddAlbumDic.html">TCAddAlbumDic</a></p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>处理结果，YES表示API调用成功，NO表示API调用失败，登录态失败，重新登录</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>在QZone相册中创建一个新的相册
+\attention 需\ref apply_perm</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TencentOAuth.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/checkPageFansWithParams:" title="checkPageFansWithParams:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/checkPageFansWithParams:">&ndash;&nbsp;checkPageFansWithParams:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>检查是否是QZone某个用户的粉丝</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)checkPageFansWithParams:(NSMutableDictionary *)<em>params</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>params</code></th>
+						<td><p>参数字典,字典的关键字参见TencentOAuthObject.h中的\ref <a href="../Classes/TCCheckPageFansDic.html">TCCheckPageFansDic</a></p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>处理结果，YES表示API调用成功，NO表示API调用失败，登录态失败，重新登录</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>检查是否是QZone某个用户的粉丝</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TencentOAuth.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/addOneBlogWithParams:" title="addOneBlogWithParams:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/addOneBlogWithParams:">&ndash;&nbsp;addOneBlogWithParams:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>在QZone中发表一篇日志
+\attention 需\ref apply_perm</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)addOneBlogWithParams:(NSMutableDictionary *)<em>params</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>params</code></th>
+						<td><p>参数字典,字典的关键字参见TencentOAuthObject.h中的\ref <a href="../Classes/TCAddOneBlogDic.html">TCAddOneBlogDic</a></p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>处理结果，YES表示API调用成功，NO表示API调用失败，登录态失败，重新登录</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>在QZone中发表一篇日志
+\attention 需\ref apply_perm</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TencentOAuth.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/addTopicWithParams:" title="addTopicWithParams:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/addTopicWithParams:">&ndash;&nbsp;addTopicWithParams:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>在QZone中发表一条说说
+\attention 需\ref apply_perm</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)addTopicWithParams:(NSMutableDictionary *)<em>params</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>params</code></th>
+						<td><p>参数字典,字典的关键字参见TencentOAuthObject.h中的\ref <a href="../Classes/TCAddTopicDic.html">TCAddTopicDic</a></p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>处理结果，YES表示API调用成功，NO表示API调用失败，登录态失败，重新登录</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>在QZone中发表一条说说
+\attention 需\ref apply_perm</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TencentOAuth.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setUserHeadpic:" title="setUserHeadpic:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setUserHeadpic:">&ndash;&nbsp;setUserHeadpic:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>设置QQ头像 使用默认的效果处理设置头像的界面
+\attention 需\ref apply_perm</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)setUserHeadpic:(NSMutableDictionary *)<em>params</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>params</code></th>
+						<td><p>参数字典,字典的关键字参见TencentOAuthObject.h中的\ref <a href="../Classes/TCSetUserHeadpic.html">TCSetUserHeadpic</a></p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>处理结果，YES表示API调用成功，NO表示API调用失败，登录态失败，重新登录</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>设置QQ头像 使用默认的效果处理设置头像的界面
+\attention 需\ref apply_perm</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TencentOAuth.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setUserHeadpic:andViewController:" title="setUserHeadpic:andViewController:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setUserHeadpic:andViewController:">&ndash;&nbsp;setUserHeadpic:andViewController:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>设置QQ头像 会返回设置头像由第三方自己处理界面的弹出方式
+\attention 需\ref apply_perm</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)setUserHeadpic:(NSMutableDictionary *)<em>params</em> andViewController:(UIViewController **)<em>viewController</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>params</code></th>
+						<td><p>参数字典,字典的关键字参见TencentOAuthObject.h中的\ref <a href="../Classes/TCSetUserHeadpic.html">TCSetUserHeadpic</a></p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>viewController</code></th>
+						<td><p>设置头像的界面</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>处理结果，YES表示API调用成功，NO表示API调用失败，登录态失败，重新登录</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>设置QQ头像 会返回设置头像由第三方自己处理界面的弹出方式
+\attention 需\ref apply_perm</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TencentOAuth.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getVipInfo" title="getVipInfo"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getVipInfo">&ndash;&nbsp;getVipInfo</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>获取QQ会员信息(仅包括是否为QQ会员,是否为年费QQ会员)
+\attention 需\ref apply_perm</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)getVipInfo</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>处理结果，YES表示API调用成功，NO表示API调用失败，登录态失败，重新登录</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>获取QQ会员信息(仅包括是否为QQ会员,是否为年费QQ会员)
+\attention 需\ref apply_perm</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TencentOAuth.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getVipRichInfo" title="getVipRichInfo"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getVipRichInfo">&ndash;&nbsp;getVipRichInfo</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>获取QQ会员详细信息
+\attention 需\ref apply_perm</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)getVipRichInfo</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>处理结果，YES表示API调用成功，NO表示API调用失败，登录态失败，重新登录</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>获取QQ会员详细信息
+\attention 需\ref apply_perm</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TencentOAuth.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/sendStory:friendList:" title="sendStory:friendList:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/sendStory:friendList:">&ndash;&nbsp;sendStory:friendList:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>QZone定向分享，可以@到具体好友，完成后将触发responseDidReceived:forMessage:回调，message：“SendStory”</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)sendStory:(NSMutableDictionary *)<em>params</em> friendList:(NSArray *)<em>fopenIdArray</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>params</code></th>
+						<td><p>参数字典</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>fopenIdArray</code></th>
+						<td><p>第三方应用预传人好友列表，好友以openid标识</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>处理结果，YES表示API调用成功，NO表示API调用失败，登录态失败，重新登录</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>QZone定向分享，可以@到具体好友，完成后将触发responseDidReceived:forMessage:回调，message：“SendStory”</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TencentOAuth.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/sendAppInvitationWithDescription:imageURL:source:" title="sendAppInvitationWithDescription:imageURL:source:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/sendAppInvitationWithDescription:imageURL:source:">&ndash;&nbsp;sendAppInvitationWithDescription:imageURL:source:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>发送应用邀请，完成后将触发responseDidReceived:forMessage:回调，message：“AppInvitation”</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)sendAppInvitationWithDescription:(NSString *)<em>desc</em> imageURL:(NSString *)<em>imageUrl</em> source:(NSString *)<em>source</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>desc</code></th>
+						<td><p>应用的描述文字，不超过35字符，如果为nil或@“”则显示默认描述</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>imageUrl</code></th>
+						<td><p>应用的图标，如果为nil或者@“”则显示默认图标</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>source</code></th>
+						<td><p>透传参数，由开发者自定义该参数内容</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>处理结果，YES表示API调用成功，NO表示API调用失败，登录态失败，重新登录</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>发送应用邀请，完成后将触发responseDidReceived:forMessage:回调，message：“AppInvitation”</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TencentOAuth.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/sendChallenge:type:imageURL:message:source:" title="sendChallenge:type:imageURL:message:source:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/sendChallenge:type:imageURL:message:source:">&ndash;&nbsp;sendChallenge:type:imageURL:message:source:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>发起PK或者发送炫耀，完成后将触发responseDidReceived:forMessage:回调，message：“AppChallenge”</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)sendChallenge:(NSString *)<em>receiver</em> type:(NSString *)<em>type</em> imageURL:(NSString *)<em>imageUrl</em> message:(NSString *)<em>message</em> source:(NSString *)<em>source</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>receiver</code></th>
+						<td><p>必须指定一位进行PK或者炫耀的好友，填写其OpenID，填写多个OpenID将截取第一个</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>type</code></th>
+						<td><p>类型，"pk"或者“brag”</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>imageUrl</code></th>
+						<td><p>炫耀/挑战场景图的URL</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>message</code></th>
+						<td><p>炫耀/挑战中的内容描述，不超过50个字符，超过限制则自动截断</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>source</code></th>
+						<td><p>透传参数，由开发者自定义该参数内容</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>处理结果，YES表示API调用成功，NO表示API调用失败，登录态失败，重新登录</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>发起PK或者发送炫耀，完成后将触发responseDidReceived:forMessage:回调，message：“AppChallenge”</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TencentOAuth.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/sendGiftRequest:exclude:specified:only:type:title:message:imageURL:source:" title="sendGiftRequest:exclude:specified:only:type:title:message:imageURL:source:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/sendGiftRequest:exclude:specified:only:type:title:message:imageURL:source:">&ndash;&nbsp;sendGiftRequest:exclude:specified:only:type:title:message:imageURL:source:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>赠送或者请求礼物，完成后将触发responseDidReceived:forMessage:回调，message：“AppGiftRequest”</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)sendGiftRequest:(NSString *)<em>receiver</em> exclude:(NSString *)<em>exclude</em> specified:(NSString *)<em>specified</em> only:(BOOL)<em>only</em> type:(NSString *)<em>type</em> title:(NSString *)<em>title</em> message:(NSString *)<em>message</em> imageURL:(NSString *)<em>imageUrl</em> source:(NSString *)<em>source</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>receiver</code></th>
+						<td><p>赠送或者请求礼物的好友的OpenID，支持填写多个，OpenID之用",&ldquo;分隔，为nil时将由用户通过好友选择器选择好友</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>exclude</code></th>
+						<td><p>用户通过好友选择器选择好友场景下，希望排除的好友（不显示在好友选择器）</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>specified</code></th>
+						<td><p>用户通过好友选择器选择好友场景下，希望出现的指定好友</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>only</code></th>
+						<td><p>是否只显示specified指定的好友</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>type</code></th>
+						<td><p>类型，"request"或者“freegift”</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>title</code></th>
+						<td><p>免费礼物或请求名称，不超过6个字符</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>message</code></th>
+						<td><p>礼物或请求的默认赠言，控制在35个汉字以内，超过限制自动截断</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>imageUrl</code></th>
+						<td><p>请求或礼物配图的URL，如果不传，则默认在弹框中显示应用的icon</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>source</code></th>
+						<td><p>透传参数，由开发者自定义该参数内容</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>处理结果，YES表示API调用成功，NO表示API调用失败，登录态失败，重新登录</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>赠送或者请求礼物，完成后将触发responseDidReceived:forMessage:回调，message：“AppGiftRequest”</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TencentOAuth.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/cancel:" title="cancel:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/cancel:">&ndash;&nbsp;cancel:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>退出指定API调用</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)cancel:(id)<em>userData</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>userData</code></th>
+						<td><p>用户调用某条API的时候传入的保留参数</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>处理结果，YES表示成功 NO表示失败</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>退出指定API调用</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TencentOAuth.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/cgiRequestWithURL:method:params:callback:" title="cgiRequestWithURL:method:params:callback:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/cgiRequestWithURL:method:params:callback:">&ndash;&nbsp;cgiRequestWithURL:method:params:callback:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>CGI类任务创建接口</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (TCAPIRequest *)cgiRequestWithURL:(NSURL *)<em>apiURL</em> method:(NSString *)<em>method</em> params:(NSDictionary *)<em>params</em> callback:(id&lt;TCAPIRequestDelegate&gt;)<em>callback</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>apiURL</code></th>
+						<td><p>CGI请求的URL地址</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>method</code></th>
+						<td><p>CGI请求方式："GET"，"POST"</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>params</code></th>
+						<td><p>CGI请求参数字典</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>callback</code></th>
+						<td><p>CGI请求结果的回调接口对象</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>CGI请求任务实例，用于取消任务，返回nil代表任务创建失败</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>CGI类任务创建接口</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TencentOAuth.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/sendAPIRequest:callback:" title="sendAPIRequest:callback:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/sendAPIRequest:callback:">&ndash;&nbsp;sendAPIRequest:callback:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>TencentOpenApi发送任务统一接口</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)sendAPIRequest:(TCAPIRequest *)<em>request</em> callback:(id&lt;TCAPIRequestDelegate&gt;)<em>callback</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>request</code></th>
+						<td><p>请求发送的任务</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>callback</code></th>
+						<td><p>任务发送后的回调地址</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>TencentOpenApi发送任务统一接口</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TencentOAuth.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2018 yoyo. All rights reserved. Updated: 2018-04-03</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

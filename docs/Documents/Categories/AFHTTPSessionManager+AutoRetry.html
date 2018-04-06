@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>AFHTTPSessionManager(AutoRetry) Category Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">philm </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">yoyo</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/GET:parameters:progress:success:failure:autoRetry:">- GET:parameters:progress:success:failure:autoRetry:</option>
+		
+		<option value="//api/name/GET:parameters:progress:success:failure:autoRetry:retryInterval:">- GET:parameters:progress:success:failure:autoRetry:retryInterval:</option>
+		
+		<option value="//api/name/downloadTaskWithRequest:progress:destination:completionHandler:autoRetry:">- downloadTaskWithRequest:progress:destination:completionHandler:autoRetry:</option>
+		
+		<option value="//api/name/downloadTaskWithRequest:progress:destination:completionHandler:autoRetry:retryInterval:">- downloadTaskWithRequest:progress:destination:completionHandler:autoRetry:retryInterval:</option>
+		
+		<option value="//api/name/downloadUrlWithAutoRetry:retryInterval:retryHandler:completionHandler:">- downloadUrlWithAutoRetry:retryInterval:retryHandler:completionHandler:</option>
+		
+		<option value="//api/name/requestUrlWithAutoRetry:retryInterval:originalRequestCreator:originalFailure:">- requestUrlWithAutoRetry:retryInterval:originalRequestCreator:originalFailure:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">AFHTTPSessionManager(AutoRetry) Category Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Declared in</th>
+	<td>AFHTTPSessionManager+AutoRetry.h<br />AFHTTPSessionManager+AutoRetry.m</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/requestUrlWithAutoRetry:retryInterval:originalRequestCreator:originalFailure:" title="requestUrlWithAutoRetry:retryInterval:originalRequestCreator:originalFailure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/requestUrlWithAutoRetry:retryInterval:originalRequestCreator:originalFailure:">&ndash;&nbsp;requestUrlWithAutoRetry:retryInterval:originalRequestCreator:originalFailure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>请求URL自动重试</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSURLSessionDataTask *)requestUrlWithAutoRetry:(int)<em>retriesRemaining</em> retryInterval:(int)<em>intervalInSeconds</em> originalRequestCreator:(NSURLSessionDataTask *( ^ ) ( void ( ^ ) ( NSURLSessionDataTask *, NSError *) ))<em>taskCreator</em> originalFailure:(void ( ^ ) ( NSURLSessionDataTask *, NSError *))<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>retriesRemaining</code></th>
+						<td><p>重试次数</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>intervalInSeconds</code></th>
+						<td><p>重试间隔</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>taskCreator</code></th>
+						<td><p>任务</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>失败回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>请求任务</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AFHTTPSessionManager+AutoRetry.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/GET:parameters:progress:success:failure:autoRetry:retryInterval:" title="GET:parameters:progress:success:failure:autoRetry:retryInterval:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/GET:parameters:progress:success:failure:autoRetry:retryInterval:">&ndash;&nbsp;GET:parameters:progress:success:failure:autoRetry:retryInterval:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>GET请求</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSURLSessionDataTask *)GET:(NSString *)<em>URLString</em> parameters:(NSDictionary *)<em>parameters</em> progress:(void ( ^ ) ( NSProgress *downloadProgress ))<em>downloadProgress</em> success:(void ( ^ ) ( NSURLSessionDataTask *task , id respo ))<em>success</em> failure:(void ( ^ ) ( NSURLSessionDataTask *task , NSError *error ))<em>failure</em> autoRetry:(int)<em>timesToRetry</em> retryInterval:(int)<em>intervalInSeconds</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>URLString</code></th>
+						<td><p>请求URL</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>parameters</code></th>
+						<td><p>参数</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>downloadProgress</code></th>
+						<td><p>下载进度</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><p>成功回调</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>失败回调</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>timesToRetry</code></th>
+						<td><p>重试次数</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>intervalInSeconds</code></th>
+						<td><p>重试间隔</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>返回请求任务</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AFHTTPSessionManager+AutoRetry.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/GET:parameters:progress:success:failure:autoRetry:" title="GET:parameters:progress:success:failure:autoRetry:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/GET:parameters:progress:success:failure:autoRetry:">&ndash;&nbsp;GET:parameters:progress:success:failure:autoRetry:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>GET请求</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSURLSessionDataTask *)GET:(NSString *)<em>URLString</em> parameters:(NSDictionary *)<em>parameters</em> progress:(void ( ^ ) ( NSProgress *downloadProgress ))<em>downloadProgress</em> success:(void ( ^ ) ( NSURLSessionDataTask *task , id respo ))<em>success</em> failure:(void ( ^ ) ( NSURLSessionDataTask *task , NSError *error ))<em>failure</em> autoRetry:(int)<em>timesToRetry</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>URLString</code></th>
+						<td><p>请求URL</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>parameters</code></th>
+						<td><p>参数</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>downloadProgress</code></th>
+						<td><p>下载进度</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><p>成功回调</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>失败回调</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>timesToRetry</code></th>
+						<td><p>重试次数</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>返回请求任务</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AFHTTPSessionManager+AutoRetry.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/downloadUrlWithAutoRetry:retryInterval:retryHandler:completionHandler:" title="downloadUrlWithAutoRetry:retryInterval:retryHandler:completionHandler:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/downloadUrlWithAutoRetry:retryInterval:retryHandler:completionHandler:">&ndash;&nbsp;downloadUrlWithAutoRetry:retryInterval:retryHandler:completionHandler:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>下载自动重试</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSURLSessionDownloadTask *)downloadUrlWithAutoRetry:(int)<em>retriesRemaining</em> retryInterval:(int)<em>intervalInSeconds</em> retryHandler:(NSURLSessionDownloadTask *( ^ ) ( void ( ^ ) ( NSURLResponse *response , NSURL *filePath , NSError *error ) ))<em>retryHandler</em> completionHandler:(void ( ^ ) ( NSURLResponse *response , NSURL *filePath , NSError *error ))<em>completionHandler</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>retriesRemaining</code></th>
+						<td><p>重试次数</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>intervalInSeconds</code></th>
+						<td><p>重试间隔</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>retryHandler</code></th>
+						<td><p>重试句柄</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completionHandler</code></th>
+						<td><p>完成回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>返回下载Task</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AFHTTPSessionManager+AutoRetry.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/downloadTaskWithRequest:progress:destination:completionHandler:autoRetry:retryInterval:" title="downloadTaskWithRequest:progress:destination:completionHandler:autoRetry:retryInterval:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/downloadTaskWithRequest:progress:destination:completionHandler:autoRetry:retryInterval:">&ndash;&nbsp;downloadTaskWithRequest:progress:destination:completionHandler:autoRetry:retryInterval:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>下载</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSURLSessionDownloadTask *)downloadTaskWithRequest:(NSURLRequest *)<em>request</em> progress:(void ( ^ ) ( NSProgress *downloadProgress ))<em>downloadProgressBlock</em> destination:(NSURL *( ^ ) ( NSURL *targetPath , NSURLResponse *response ))<em>destination</em> completionHandler:(void ( ^ ) ( NSURLResponse *response , NSURL *filePath , NSError *error ))<em>completionHandler</em> autoRetry:(int)<em>timesToRetry</em> retryInterval:(int)<em>intervalInSeconds</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>request</code></th>
+						<td><p>请求</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>downloadProgressBlock</code></th>
+						<td><p>下载进度回调</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>destination</code></th>
+						<td><p>文件下载路径</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completionHandler</code></th>
+						<td><p>完成回调</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>timesToRetry</code></th>
+						<td><p>重试次数</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>intervalInSeconds</code></th>
+						<td><p>重试间隔</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>下载任务</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AFHTTPSessionManager+AutoRetry.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/downloadTaskWithRequest:progress:destination:completionHandler:autoRetry:" title="downloadTaskWithRequest:progress:destination:completionHandler:autoRetry:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/downloadTaskWithRequest:progress:destination:completionHandler:autoRetry:">&ndash;&nbsp;downloadTaskWithRequest:progress:destination:completionHandler:autoRetry:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>下载</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSURLSessionDownloadTask *)downloadTaskWithRequest:(NSURLRequest *)<em>request</em> progress:(void ( ^ ) ( NSProgress *downloadProgress ))<em>downloadProgressBlock</em> destination:(NSURL *( ^ ) ( NSURL *targetPath , NSURLResponse *response ))<em>destination</em> completionHandler:(void ( ^ ) ( NSURLResponse *response , NSURL *filePath , NSError *error ))<em>completionHandler</em> autoRetry:(int)<em>timesToRetry</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>request</code></th>
+						<td><p>请求</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>downloadProgressBlock</code></th>
+						<td><p>下载进度回调</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>destination</code></th>
+						<td><p>文件下载路径</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completionHandler</code></th>
+						<td><p>完成回调</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>timesToRetry</code></th>
+						<td><p>重试次数</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>下载任务</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AFHTTPSessionManager+AutoRetry.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2018 yoyo. All rights reserved. Updated: 2018-04-03</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

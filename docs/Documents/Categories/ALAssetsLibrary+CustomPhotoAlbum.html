@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>ALAssetsLibrary(CustomPhotoAlbum) Category Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">philm </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">yoyo</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/addAssetURL:toAlbum:completion:failure:">- addAssetURL:toAlbum:completion:failure:</option>
+		
+		<option value="//api/name/loadImagesFromAlbum:completion:">- loadImagesFromAlbum:completion:</option>
+		
+		<option value="//api/name/saveImage:toAlbum:completion:failure:">- saveImage:toAlbum:completion:failure:</option>
+		
+		<option value="//api/name/saveImageData:toAlbum:metadata:completion:failure:">- saveImageData:toAlbum:metadata:completion:failure:</option>
+		
+		<option value="//api/name/saveVideo:toAlbum:completion:failure:">- saveVideo:toAlbum:completion:failure:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">ALAssetsLibrary(CustomPhotoAlbum) Category Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Declared in</th>
+	<td>ALAssetsLibrary+CustomPhotoAlbum.h<br />ALAssetsLibrary+CustomPhotoAlbum.m</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/saveImage:toAlbum:completion:failure:" title="saveImage:toAlbum:completion:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/saveImage:toAlbum:completion:failure:">&ndash;&nbsp;saveImage:toAlbum:completion:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Write the image data to the assets library (camera roll).</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)saveImage:(UIImage *)<em>image</em> toAlbum:(NSString *)<em>albumName</em> completion:(ALAssetsLibraryWriteImageCompletionBlock)<em>completion</em> failure:(ALAssetsLibraryAccessFailureBlock)<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>image</code></th>
+						<td><p>The target image to be saved</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>albumName</code></th>
+						<td><p>Custom album name</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>Block to be executed when succeed to write the image data to the assets library (camera roll)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>Block to be executed when failed to add the asset to the custom photo album</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Write the image data to the assets library (camera roll).</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALAssetsLibrary+CustomPhotoAlbum.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/saveVideo:toAlbum:completion:failure:" title="saveVideo:toAlbum:completion:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/saveVideo:toAlbum:completion:failure:">&ndash;&nbsp;saveVideo:toAlbum:completion:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>write the video to the assets library (camera roll).</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)saveVideo:(NSURL *)<em>videoUrl</em> toAlbum:(NSString *)<em>albumName</em> completion:(ALAssetsLibraryWriteImageCompletionBlock)<em>completion</em> failure:(ALAssetsLibraryAccessFailureBlock)<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>videoUrl</code></th>
+						<td><p>The target video to be saved</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>albumName</code></th>
+						<td><p>Custom album name</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>Block to be executed when succeed to write the image data to the assets library (camera roll)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>block to be executed when failed to add the asset to the custom photo album</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>write the video to the assets library (camera roll).</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALAssetsLibrary+CustomPhotoAlbum.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/saveImageData:toAlbum:metadata:completion:failure:" title="saveImageData:toAlbum:metadata:completion:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/saveImageData:toAlbum:metadata:completion:failure:">&ndash;&nbsp;saveImageData:toAlbum:metadata:completion:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Write the image data with meta data to the assets library (camera roll).</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)saveImageData:(NSData *)<em>imageData</em> toAlbum:(NSString *)<em>albumName</em> metadata:(NSDictionary *)<em>metadata</em> completion:(ALAssetsLibraryWriteImageCompletionBlock)<em>completion</em> failure:(ALAssetsLibraryAccessFailureBlock)<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>imageData</code></th>
+						<td><p>The image data to be saved</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>albumName</code></th>
+						<td><p>Custom album name</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>metadata</code></th>
+						<td><p>Meta data for image</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>Block to be executed when succeed to write the image data</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>block to be executed when failed to add the asset to the custom photo album</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Write the image data with meta data to the assets library (camera roll).</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALAssetsLibrary+CustomPhotoAlbum.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/addAssetURL:toAlbum:completion:failure:" title="addAssetURL:toAlbum:completion:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/addAssetURL:toAlbum:completion:failure:">&ndash;&nbsp;addAssetURL:toAlbum:completion:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Write the asset to the assets library (camera roll).</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)addAssetURL:(NSURL *)<em>assetURL</em> toAlbum:(NSString *)<em>albumName</em> completion:(ALAssetsLibraryWriteImageCompletionBlock)<em>completion</em> failure:(ALAssetsLibraryAccessFailureBlock)<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>assetURL</code></th>
+						<td><p>The asset URL</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>albumName</code></th>
+						<td><p>Custom album name</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>Block to be executed when failed to add the asset to the custom photo album</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Write the asset to the assets library (camera roll).</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALAssetsLibrary+CustomPhotoAlbum.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/loadImagesFromAlbum:completion:" title="loadImagesFromAlbum:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/loadImagesFromAlbum:completion:">&ndash;&nbsp;loadImagesFromAlbum:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Loads assets from the assets group (album)</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)loadImagesFromAlbum:(NSString *)<em>albumName</em> completion:(void ( ^ ) ( NSMutableArray *images , NSError *error ))<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>albumName</code></th>
+						<td><p>Custom album name</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>Block to be executed when succeed or failed to load images from target album</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Loads assets from the assets group (album)</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALAssetsLibrary+CustomPhotoAlbum.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2018 yoyo. All rights reserved. Updated: 2018-04-03</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

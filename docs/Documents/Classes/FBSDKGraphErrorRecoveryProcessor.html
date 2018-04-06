@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>FBSDKGraphErrorRecoveryProcessor Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">philm </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">yoyo</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/delegate">delegate</option>
+		
+	</optgroup>
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/didPresentErrorWithRecovery:contextInfo:">- didPresentErrorWithRecovery:contextInfo:</option>
+		
+		<option value="//api/name/processError:request:delegate:">- processError:request:delegate:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">FBSDKGraphErrorRecoveryProcessor Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>FBSDKGraphErrorRecoveryProcessor.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>Facebook NSErrors can contain <a href="../Protocols/FBSDKErrorRecoveryAttempting.html">FBSDKErrorRecoveryAttempting</a> instances to recover from errors, or
+localized messages to present to the user. This class will process the instances as follows:</p>
+
+<ol>
+<li>If the error is temporary as indicated by FBSDKGraphRequestErrorCategoryKey, assume the recovery succeeded and
+notify the <a href="#//api/name/delegate">delegate</a>.</li>
+<li>If a <a href="../Protocols/FBSDKErrorRecoveryAttempting.html">FBSDKErrorRecoveryAttempting</a> instance is available, display an alert (dispatched to main thread)
+with the recovery options and call the instance&rsquo;s [ attemptRecoveryFromError:optionIndex:&hellip;].</li>
+<li>If a <a href="../Protocols/FBSDKErrorRecoveryAttempting.html">FBSDKErrorRecoveryAttempting</a> is not available, check the userInfo for FBSDKLocalizedErrorDescriptionKey
+and present that in an alert (dispatched to main thread).</li>
+</ol>
+
+
+<p>By default, FBSDKGraphRequests use this type to process errors and retry the request upon a successful
+recovery.</p>
+
+<p>Note that Facebook recovery attempters can present UI or even cause app switches (such as to login). Any such
+work is dispatched to the main thread (therefore your request handlers may then run on the main thread).</p>
+
+<p>Login recovery requires FBSDKLoginKit. Login will use FBSDKLoginBehaviorNative and will prompt the user
+for all permissions last granted. If any are declined on the new request, the recovery is not successful but
+the <a href="../Classes/FBSDKAccessToken.html#//api/name/currentAccessToken"><code>[FBSDKAccessToken currentAccessToken]</code></a> might still have been updated.
+.</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/delegate" title="delegate"></a>
+	<h3 class="method-title"><code><a href="#//api/name/delegate">&nbsp;&nbsp;delegate</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Gets the delegate. Note this is a strong reference, and is nil'ed out after recovery is complete.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong, readonly) id&lt;FBSDKGraphErrorRecoveryProcessorDelegate&gt; delegate</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">FBSDKGraphErrorRecoveryProcessor.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/processError:request:delegate:" title="processError:request:delegate:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/processError:request:delegate:">&ndash;&nbsp;processError:request:delegate:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Attempts to process the error, return YES if the error can be processed.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)processError:(NSError *)<em>error</em> request:(FBSDKGraphRequest *)<em>request</em> delegate:(id&lt;FBSDKGraphErrorRecoveryProcessorDelegate&gt;)<em>delegate</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>error</code></th>
+						<td><p>the error to process.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>request</code></th>
+						<td><p>the related request that may be reissued.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>delegate</code></th>
+						<td><p>the <a href="#//api/name/delegate">delegate</a> that will be retained until recovery is complete.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">FBSDKGraphErrorRecoveryProcessor.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/didPresentErrorWithRecovery:contextInfo:" title="didPresentErrorWithRecovery:contextInfo:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/didPresentErrorWithRecovery:contextInfo:">&ndash;&nbsp;didPresentErrorWithRecovery:contextInfo:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The callback for <a href="../Protocols/FBSDKErrorRecoveryAttempting.html">FBSDKErrorRecoveryAttempting</a></p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)didPresentErrorWithRecovery:(BOOL)<em>didRecover</em> contextInfo:(void *)<em>contextInfo</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>didRecover</code></th>
+						<td><p>if the recovery succeeded</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>contextInfo</code></th>
+						<td><p>unused</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">FBSDKGraphErrorRecoveryProcessor.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2018 yoyo. All rights reserved. Updated: 2018-04-03</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

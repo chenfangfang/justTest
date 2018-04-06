@@ -1,0 +1,1732 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>BFTask Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">philm </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">yoyo</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/cancelled">cancelled</option>
+		
+		<option value="//api/name/completed">completed</option>
+		
+		<option value="//api/name/error">error</option>
+		
+		<option value="//api/name/exception">exception</option>
+		
+		<option value="//api/name/faulted">faulted</option>
+		
+		<option value="//api/name/result">result</option>
+		
+	</optgroup>
+	
+
+	
+	<optgroup label="Class Methods">
+		
+		<option value="//api/name/cancelledTask">+ cancelledTask</option>
+		
+		<option value="//api/name/taskForCompletionOfAllTasks:">+ taskForCompletionOfAllTasks:</option>
+		
+		<option value="//api/name/taskForCompletionOfAllTasksWithResults:">+ taskForCompletionOfAllTasksWithResults:</option>
+		
+		<option value="//api/name/taskForCompletionOfAnyTask:">+ taskForCompletionOfAnyTask:</option>
+		
+		<option value="//api/name/taskFromExecutor:withBlock:">+ taskFromExecutor:withBlock:</option>
+		
+		<option value="//api/name/taskWithDelay:">+ taskWithDelay:</option>
+		
+		<option value="//api/name/taskWithDelay:cancellationToken:">+ taskWithDelay:cancellationToken:</option>
+		
+		<option value="//api/name/taskWithError:">+ taskWithError:</option>
+		
+		<option value="//api/name/taskWithException:">+ taskWithException:</option>
+		
+		<option value="//api/name/taskWithResult:">+ taskWithResult:</option>
+		
+	</optgroup>
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/continueWithBlock:">- continueWithBlock:</option>
+		
+		<option value="//api/name/continueWithBlock:cancellationToken:">- continueWithBlock:cancellationToken:</option>
+		
+		<option value="//api/name/continueWithExecutor:block:cancellationToken:">- continueWithExecutor:block:cancellationToken:</option>
+		
+		<option value="//api/name/continueWithExecutor:successBlock:cancellationToken:">- continueWithExecutor:successBlock:cancellationToken:</option>
+		
+		<option value="//api/name/continueWithExecutor:withBlock:">- continueWithExecutor:withBlock:</option>
+		
+		<option value="//api/name/continueWithExecutor:withSuccessBlock:">- continueWithExecutor:withSuccessBlock:</option>
+		
+		<option value="//api/name/continueWithSuccessBlock:">- continueWithSuccessBlock:</option>
+		
+		<option value="//api/name/continueWithSuccessBlock:cancellationToken:">- continueWithSuccessBlock:cancellationToken:</option>
+		
+		<option value="//api/name/waitUntilFinished">- waitUntilFinished</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">BFTask Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Conforms to</th>
+	<td>ResultType<br />__covariant</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>BFTask.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>The consumer view of a Task. A BFTask has methods to
+inspect the state of the task, and to add continuations to
+be run once the task is complete.</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/taskWithResult:" title="taskWithResult:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/taskWithResult:">+&nbsp;taskWithResult:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Creates a task that is already <a href="#//api/name/completed">completed</a> with the given <a href="#//api/name/result">result</a>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (instancetype)taskWithResult:(nullable ResultType)<em>result</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>result</code></th>
+						<td><p>The <a href="#//api/name/result">result</a> for the task.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Creates a task that is already <a href="#//api/name/completed">completed</a> with the given <a href="#//api/name/result">result</a>.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BFTask.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/taskWithError:" title="taskWithError:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/taskWithError:">+&nbsp;taskWithError:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Creates a task that is already <a href="#//api/name/completed">completed</a> with the given <a href="#//api/name/error">error</a>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (instancetype)taskWithError:(NSError *)<em>error</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>error</code></th>
+						<td><p>The <a href="#//api/name/error">error</a> for the task.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Creates a task that is already <a href="#//api/name/completed">completed</a> with the given <a href="#//api/name/error">error</a>.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BFTask.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/taskWithException:" title="taskWithException:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/taskWithException:">+&nbsp;taskWithException:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Creates a task that is already <a href="#//api/name/completed">completed</a> with the given <a href="#//api/name/exception">exception</a>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (instancetype)taskWithException:(NSException *)<em>exception</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>exception</code></th>
+						<td><p>The <a href="#//api/name/exception">exception</a> for the task.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Creates a task that is already <a href="#//api/name/completed">completed</a> with the given <a href="#//api/name/exception">exception</a>.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BFTask.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/cancelledTask" title="cancelledTask"></a>
+	<h3 class="method-title"><code><a href="#//api/name/cancelledTask">+&nbsp;cancelledTask</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Creates a task that is already <a href="#//api/name/cancelled">cancelled</a>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (instancetype)cancelledTask</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Creates a task that is already <a href="#//api/name/cancelled">cancelled</a>.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BFTask.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/taskForCompletionOfAllTasks:" title="taskForCompletionOfAllTasks:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/taskForCompletionOfAllTasks:">+&nbsp;taskForCompletionOfAllTasks:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns a task that will be <a href="#//api/name/completed">completed</a> (with <a href="#//api/name/result">result</a> == nil) once
+all of the input tasks have <a href="#//api/name/completed">completed</a>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (instancetype)taskForCompletionOfAllTasks:(nullable NSArray&lt;BFTask*&gt; *)<em>tasks</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>tasks</code></th>
+						<td><p>An <code>NSArray</code> of the tasks to use as an input.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Returns a task that will be <a href="#//api/name/completed">completed</a> (with <a href="#//api/name/result">result</a> == nil) once
+all of the input tasks have <a href="#//api/name/completed">completed</a>.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BFTask.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/taskForCompletionOfAllTasksWithResults:" title="taskForCompletionOfAllTasksWithResults:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/taskForCompletionOfAllTasksWithResults:">+&nbsp;taskForCompletionOfAllTasksWithResults:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns a task that will be <a href="#//api/name/completed">completed</a> once all of the input tasks have <a href="#//api/name/completed">completed</a>.
+If all tasks complete successfully without being <a href="#//api/name/faulted">faulted</a> or <a href="#//api/name/cancelled">cancelled</a> the <a href="#//api/name/result">result</a> will be
+an <code>NSArray</code> of all task results in the order they were provided.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (instancetype)taskForCompletionOfAllTasksWithResults:(nullable NSArray&lt;BFTask*&gt; *)<em>tasks</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>tasks</code></th>
+						<td><p>An <code>NSArray</code> of the tasks to use as an input.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Returns a task that will be <a href="#//api/name/completed">completed</a> once all of the input tasks have <a href="#//api/name/completed">completed</a>.
+If all tasks complete successfully without being <a href="#//api/name/faulted">faulted</a> or <a href="#//api/name/cancelled">cancelled</a> the <a href="#//api/name/result">result</a> will be
+an <code>NSArray</code> of all task results in the order they were provided.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BFTask.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/taskForCompletionOfAnyTask:" title="taskForCompletionOfAnyTask:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/taskForCompletionOfAnyTask:">+&nbsp;taskForCompletionOfAnyTask:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns a task that will be <a href="#//api/name/completed">completed</a> once there is at least one successful task.
+The first task to successuly complete will set the <a href="#//api/name/result">result</a>, all other tasks results are
+ignored.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (instancetype)taskForCompletionOfAnyTask:(nullable NSArray&lt;BFTask*&gt; *)<em>tasks</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>tasks</code></th>
+						<td><p>An <code>NSArray</code> of the tasks to use as an input.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Returns a task that will be <a href="#//api/name/completed">completed</a> once there is at least one successful task.
+The first task to successuly complete will set the <a href="#//api/name/result">result</a>, all other tasks results are
+ignored.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BFTask.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/taskWithDelay:" title="taskWithDelay:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/taskWithDelay:">+&nbsp;taskWithDelay:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns a task that will be <a href="#//api/name/completed">completed</a> a certain amount of time in the future.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (instancetype)taskWithDelay:(int)<em>millis</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>millis</code></th>
+						<td><p>The approximate number of milliseconds to wait before the
+task will be finished (with <a href="#//api/name/result">result</a> == nil).</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Returns a task that will be <a href="#//api/name/completed">completed</a> a certain amount of time in the future.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BFTask.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/taskWithDelay:cancellationToken:" title="taskWithDelay:cancellationToken:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/taskWithDelay:cancellationToken:">+&nbsp;taskWithDelay:cancellationToken:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns a task that will be <a href="#//api/name/completed">completed</a> a certain amount of time in the future.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (instancetype)taskWithDelay:(int)<em>millis</em> cancellationToken:(nullable BFCancellationToken *)<em>token</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>millis</code></th>
+						<td><p>The approximate number of milliseconds to wait before the
+task will be finished (with <a href="#//api/name/result">result</a> == nil).</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>token</code></th>
+						<td><p>The cancellation token (optional).</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Returns a task that will be <a href="#//api/name/completed">completed</a> a certain amount of time in the future.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BFTask.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/taskFromExecutor:withBlock:" title="taskFromExecutor:withBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/taskFromExecutor:withBlock:">+&nbsp;taskFromExecutor:withBlock:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns a task that will be <a href="#//api/name/completed">completed</a> after the given block completes with
+the specified executor.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (instancetype)taskFromExecutor:(BFExecutor *)<em>executor</em> withBlock:(nullable id ( ^ ) ( ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>executor</code></th>
+						<td><p>A <a href="../Classes/BFExecutor.html">BFExecutor</a> responsible for determining how the
+continuation block will be run.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>The block to immediately schedule to run with the given executor.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>A task that will be <a href="#//api/name/completed">completed</a> after block has run.
+If block returns a BFTask, then the task returned from
+this method will not be <a href="#//api/name/completed">completed</a> until that task is <a href="#//api/name/completed">completed</a>.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Returns a task that will be <a href="#//api/name/completed">completed</a> after the given block completes with
+the specified executor.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BFTask.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/result" title="result"></a>
+	<h3 class="method-title"><code><a href="#//api/name/result">&nbsp;&nbsp;result</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The result of a successful task.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nullable, nonatomic, strong, readonly) ResultType result</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The result of a successful task.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BFTask.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/error" title="error"></a>
+	<h3 class="method-title"><code><a href="#//api/name/error">&nbsp;&nbsp;error</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The error of a failed task.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nullable, nonatomic, strong, readonly) NSError *error</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The error of a failed task.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BFTask.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/exception" title="exception"></a>
+	<h3 class="method-title"><code><a href="#//api/name/exception">&nbsp;&nbsp;exception</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The exception of a failed task.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nullable, nonatomic, strong, readonly) NSException *exception</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The exception of a failed task.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BFTask.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/cancelled" title="cancelled"></a>
+	<h3 class="method-title"><code><a href="#//api/name/cancelled">&nbsp;&nbsp;cancelled</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Whether this task has been cancelled.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign, readonly, getter=isCancelled) BOOL cancelled</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Whether this task has been cancelled.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BFTask.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/faulted" title="faulted"></a>
+	<h3 class="method-title"><code><a href="#//api/name/faulted">&nbsp;&nbsp;faulted</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Whether this task has <a href="#//api/name/completed">completed</a> due to an <a href="#//api/name/error">error</a> or <a href="#//api/name/exception">exception</a>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign, readonly, getter=isFaulted) BOOL faulted</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Whether this task has <a href="#//api/name/completed">completed</a> due to an <a href="#//api/name/error">error</a> or <a href="#//api/name/exception">exception</a>.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BFTask.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/completed" title="completed"></a>
+	<h3 class="method-title"><code><a href="#//api/name/completed">&nbsp;&nbsp;completed</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Whether this task has completed.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign, readonly, getter=isCompleted) BOOL completed</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Whether this task has completed.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BFTask.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/continueWithBlock:" title="continueWithBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/continueWithBlock:">&ndash;&nbsp;continueWithBlock:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Enqueues the given block to be run once this task is complete.
+This method uses a default execution strategy. The block will be
+run on the thread where the previous task completes, unless the
+the stack depth is too deep, in which case it will be run on a
+dispatch queue with default priority.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BFTask *)continueWithBlock:(BFContinuationBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>The block to be run once this task is complete.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>A task that will be <a href="#//api/name/completed">completed</a> after block has run.
+If block returns a BFTask, then the task returned from
+this method will not be <a href="#//api/name/completed">completed</a> until that task is <a href="#//api/name/completed">completed</a>.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Enqueues the given block to be run once this task is complete.
+This method uses a default execution strategy. The block will be
+run on the thread where the previous task completes, unless the
+the stack depth is too deep, in which case it will be run on a
+dispatch queue with default priority.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BFTask.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/continueWithBlock:cancellationToken:" title="continueWithBlock:cancellationToken:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/continueWithBlock:cancellationToken:">&ndash;&nbsp;continueWithBlock:cancellationToken:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Enqueues the given block to be run once this task is complete.
+This method uses a default execution strategy. The block will be
+run on the thread where the previous task completes, unless the
+the stack depth is too deep, in which case it will be run on a
+dispatch queue with default priority.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BFTask *)continueWithBlock:(BFContinuationBlock)<em>block</em> cancellationToken:(nullable BFCancellationToken *)<em>cancellationToken</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>The block to be run once this task is complete.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>cancellationToken</code></th>
+						<td><p>The cancellation token (optional).</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>A task that will be <a href="#//api/name/completed">completed</a> after block has run.
+If block returns a BFTask, then the task returned from
+this method will not be <a href="#//api/name/completed">completed</a> until that task is <a href="#//api/name/completed">completed</a>.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Enqueues the given block to be run once this task is complete.
+This method uses a default execution strategy. The block will be
+run on the thread where the previous task completes, unless the
+the stack depth is too deep, in which case it will be run on a
+dispatch queue with default priority.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BFTask.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/continueWithExecutor:withBlock:" title="continueWithExecutor:withBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/continueWithExecutor:withBlock:">&ndash;&nbsp;continueWithExecutor:withBlock:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Enqueues the given block to be run once this task is complete.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BFTask *)continueWithExecutor:(BFExecutor *)<em>executor</em> withBlock:(BFContinuationBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>executor</code></th>
+						<td><p>A <a href="../Classes/BFExecutor.html">BFExecutor</a> responsible for determining how the
+continuation block will be run.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>The block to be run once this task is complete.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>A task that will be <a href="#//api/name/completed">completed</a> after block has run.
+If block returns a BFTask, then the task returned from
+this method will not be <a href="#//api/name/completed">completed</a> until that task is <a href="#//api/name/completed">completed</a>.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Enqueues the given block to be run once this task is complete.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BFTask.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/continueWithExecutor:block:cancellationToken:" title="continueWithExecutor:block:cancellationToken:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/continueWithExecutor:block:cancellationToken:">&ndash;&nbsp;continueWithExecutor:block:cancellationToken:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Enqueues the given block to be run once this task is complete.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BFTask *)continueWithExecutor:(BFExecutor *)<em>executor</em> block:(BFContinuationBlock)<em>block</em> cancellationToken:(nullable BFCancellationToken *)<em>cancellationToken</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>executor</code></th>
+						<td><p>A <a href="../Classes/BFExecutor.html">BFExecutor</a> responsible for determining how the
+continuation block will be run.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>The block to be run once this task is complete.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>cancellationToken</code></th>
+						<td><p>The cancellation token (optional).</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>A task that will be <a href="#//api/name/completed">completed</a> after block has run.
+If block returns a BFTask, then the task returned from
+his method will not be <a href="#//api/name/completed">completed</a> until that task is <a href="#//api/name/completed">completed</a>.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Enqueues the given block to be run once this task is complete.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BFTask.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/continueWithSuccessBlock:" title="continueWithSuccessBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/continueWithSuccessBlock:">&ndash;&nbsp;continueWithSuccessBlock:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Identical to <a href="#//api/name/continueWithBlock:">continueWithBlock:</a>, except that the block is only run
+if this task did not produce a cancellation, <a href="#//api/name/error">error</a>, or <a href="#//api/name/exception">exception</a>.
+If it did, then the failure will be propagated to the returned
+task.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BFTask *)continueWithSuccessBlock:(BFContinuationBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>The block to be run once this task is complete.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>A task that will be <a href="#//api/name/completed">completed</a> after block has run.
+If block returns a BFTask, then the task returned from
+this method will not be <a href="#//api/name/completed">completed</a> until that task is <a href="#//api/name/completed">completed</a>.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Identical to <a href="#//api/name/continueWithBlock:">continueWithBlock:</a>, except that the block is only run
+if this task did not produce a cancellation, <a href="#//api/name/error">error</a>, or <a href="#//api/name/exception">exception</a>.
+If it did, then the failure will be propagated to the returned
+task.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BFTask.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/continueWithSuccessBlock:cancellationToken:" title="continueWithSuccessBlock:cancellationToken:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/continueWithSuccessBlock:cancellationToken:">&ndash;&nbsp;continueWithSuccessBlock:cancellationToken:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Identical to <a href="#//api/name/continueWithBlock:">continueWithBlock:</a>, except that the block is only run
+if this task did not produce a cancellation, <a href="#//api/name/error">error</a>, or <a href="#//api/name/exception">exception</a>.
+If it did, then the failure will be propagated to the returned
+task.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BFTask *)continueWithSuccessBlock:(BFContinuationBlock)<em>block</em> cancellationToken:(nullable BFCancellationToken *)<em>cancellationToken</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>The block to be run once this task is complete.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>cancellationToken</code></th>
+						<td><p>The cancellation token (optional).</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>A task that will be <a href="#//api/name/completed">completed</a> after block has run.
+If block returns a BFTask, then the task returned from
+this method will not be <a href="#//api/name/completed">completed</a> until that task is <a href="#//api/name/completed">completed</a>.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Identical to <a href="#//api/name/continueWithBlock:">continueWithBlock:</a>, except that the block is only run
+if this task did not produce a cancellation, <a href="#//api/name/error">error</a>, or <a href="#//api/name/exception">exception</a>.
+If it did, then the failure will be propagated to the returned
+task.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BFTask.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/continueWithExecutor:withSuccessBlock:" title="continueWithExecutor:withSuccessBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/continueWithExecutor:withSuccessBlock:">&ndash;&nbsp;continueWithExecutor:withSuccessBlock:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Identical to <a href="#//api/name/continueWithExecutor:withBlock:">continueWithExecutor:withBlock:</a>, except that the block
+is only run if this task did not produce a cancellation, <a href="#//api/name/error">error</a>, or
+<a href="#//api/name/exception">exception</a>. If it did, then the failure will be propagated to the
+returned task.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BFTask *)continueWithExecutor:(BFExecutor *)<em>executor</em> withSuccessBlock:(BFContinuationBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>executor</code></th>
+						<td><p>A <a href="../Classes/BFExecutor.html">BFExecutor</a> responsible for determining how the
+continuation block will be run.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>The block to be run once this task is complete.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>A task that will be <a href="#//api/name/completed">completed</a> after block has run.
+If block returns a BFTask, then the task returned from
+this method will not be <a href="#//api/name/completed">completed</a> until that task is <a href="#//api/name/completed">completed</a>.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Identical to <a href="#//api/name/continueWithExecutor:withBlock:">continueWithExecutor:withBlock:</a>, except that the block
+is only run if this task did not produce a cancellation, <a href="#//api/name/error">error</a>, or
+<a href="#//api/name/exception">exception</a>. If it did, then the failure will be propagated to the
+returned task.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BFTask.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/continueWithExecutor:successBlock:cancellationToken:" title="continueWithExecutor:successBlock:cancellationToken:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/continueWithExecutor:successBlock:cancellationToken:">&ndash;&nbsp;continueWithExecutor:successBlock:cancellationToken:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Identical to <a href="#//api/name/continueWithExecutor:withBlock:">continueWithExecutor:withBlock:</a>, except that the block
+is only run if this task did not produce a cancellation, <a href="#//api/name/error">error</a>, or
+<a href="#//api/name/exception">exception</a>. If it did, then the failure will be propagated to the
+returned task.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BFTask *)continueWithExecutor:(BFExecutor *)<em>executor</em> successBlock:(BFContinuationBlock)<em>block</em> cancellationToken:(nullable BFCancellationToken *)<em>cancellationToken</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>executor</code></th>
+						<td><p>A <a href="../Classes/BFExecutor.html">BFExecutor</a> responsible for determining how the
+continuation block will be run.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>The block to be run once this task is complete.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>cancellationToken</code></th>
+						<td><p>The cancellation token (optional).</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>A task that will be <a href="#//api/name/completed">completed</a> after block has run.
+If block returns a BFTask, then the task returned from
+this method will not be <a href="#//api/name/completed">completed</a> until that task is <a href="#//api/name/completed">completed</a>.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Identical to <a href="#//api/name/continueWithExecutor:withBlock:">continueWithExecutor:withBlock:</a>, except that the block
+is only run if this task did not produce a cancellation, <a href="#//api/name/error">error</a>, or
+<a href="#//api/name/exception">exception</a>. If it did, then the failure will be propagated to the
+returned task.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BFTask.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/waitUntilFinished" title="waitUntilFinished"></a>
+	<h3 class="method-title"><code><a href="#//api/name/waitUntilFinished">&ndash;&nbsp;waitUntilFinished</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Waits until this operation is <a href="#//api/name/completed">completed</a>.
+This method is inefficient and consumes a thread resource while
+it&rsquo;s running. It should be avoided. This method logs a warning
+message if it is used on the main thread.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)waitUntilFinished</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Waits until this operation is <a href="#//api/name/completed">completed</a>.
+This method is inefficient and consumes a thread resource while
+it&rsquo;s running. It should be avoided. This method logs a warning
+message if it is used on the main thread.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BFTask.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2018 yoyo. All rights reserved. Updated: 2018-04-03</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>
