@@ -20,5 +20,6 @@ Pod::Spec.new do |s|
 
   s.source_files  = "justTest", "justTest/**/*.{h,m}"
   
-  s.documentation_url = 'http://www.example.com/docs.html'
+  s.documentation_url = "https://chenfangfang.github.io/NXFramework_API/Documents/index.html"
+
 end
